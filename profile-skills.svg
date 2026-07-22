@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" width="860" height="420">
+  <defs>
+    <!-- Background Gradient: Dark Violet & Black Night Sky -->
+    <linearGradient id="nightSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#07040d"/>
+      <stop offset="60%" stop-color="#110a24"/>
+      <stop offset="100%" stop-color="#07040d"/>
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Colors -->
+    <linearGradient id="aiGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#06b6d4"/><stop offset="100%" stop-color="#3b82f6"/></linearGradient>
+    <linearGradient id="dataGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#a3e635"/><stop offset="100%" stop-color="#10b981"/></linearGradient>
+    <linearGradient id="designGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#ec4899"/><stop offset="100%" stop-color="#818cf8"/></linearGradient>
+    <linearGradient id="cyberGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#ef4444"/><stop offset="100%" stop-color="#f97316"/></linearGradient>
+    <linearGradient id="opsGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#14b8a6"/><stop offset="100%" stop-color="#06b6d4"/></linearGradient>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;700&family=Outfit:wght@700;800&family=Space+Grotesk:wght@500;700&display=swap');
+    
+    .lbl-txt { font-family: 'Fira Code', monospace; }
+    .title-txt { font-family: 'Outfit', sans-serif; }
+    .desc-txt { font-family: 'Space Grotesk', sans-serif; }
+
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.15; }
+      50% { opacity: 0.35; }
+    }
+    .glow-panel { animation: pulseGlow 4s ease-in-out infinite; }
+  </style>
+
+  <!-- Background Sky -->
+  <rect width="860" height="420" fill="url(#nightSky)" rx="16"/>
+
+  <!-- Static Stars Field -->
+  <circle cx="90" cy="80" r="1" fill="#c4b5fd" opacity="0.3"/>
+  <circle cx="280" cy="50" r="1.2" fill="#c4b5fd" opacity="0.4"/>
+  <circle cx="530" cy="90" r="1" fill="#c4b5fd" opacity="0.25"/>
+  <circle cx="750" cy="40" r="1.5" fill="#c4b5fd" opacity="0.3"/>
+  <circle cx="150" cy="350" r="1" fill="#c4b5fd" opacity="0.4"/>
+  <circle cx="680" cy="370" r="1.2" fill="#c4b5fd" opacity="0.3"/>
+
+  <!-- Section Header -->
+  <g transform="translate(45, 45)">
+    <text x="0" y="0" fill="#818cf8" class="lbl-txt" font-size="10" font-weight="700" letter-spacing="3.5">REAL-TIME INVENTORY</text>
+    <text x="0" y="24" fill="#ffffff" class="title-txt" font-size="22" font-weight="800" letter-spacing="1">Specialized Tech Specialties</text>
+    <line x1="0" y1="36" x2="160" y2="36" stroke="#818cf8" stroke-width="1.5"/>
+  </g>
+
+  <!-- 6 Specialty Grid Panels -->
+  <!-- 1. AI Orchestrator -->
+  <g transform="translate(45, 110)">
+    <rect width="245" height="130" rx="12" fill="rgba(255, 255, 255, 0.02)" stroke="rgba(6, 182, 212, 0.2)" stroke-width="1.2"/>
+    <circle cx="28" cy="28" r="14" fill="rgba(6, 182, 212, 0.1)"/>
+    <!-- Robot Head vector -->
+    <path d="M22 23 h12 v9 h-12 z M24 23 v-3 h8 v3 M21 27 h2 M34 27 h2 M25 32 L25 35 M31 32 L31 35" stroke="#06b6d4" stroke-width="1.2" fill="none"/>
+    <text x="50" y="27" fill="#ffffff" class="title-txt" font-size="12" font-weight="800">AI Orchestrator</text>
+    <text x="50" y="39" fill="#06b6d4" class="lbl-txt" font-size="8" font-weight="700">97% EXPERTISE</text>
+    
+    <!-- Skills lines -->
+    <text x="14" y="68" fill="#e2e8f0" class="desc-txt" font-size="9.5" font-weight="700">· Agentic AI Systems (n8n/CrewAI)</text>
+    <text x="14" y="84" fill="#e2e8f0" class="desc-txt" font-size="9.5" font-weight="700">· Context-Aware RAG Pipelines</text>
+    <text x="14" y="100" fill="#e2e8f0" class="desc-txt" font-size="9.5" font-weight="700">· LangChain &amp; Multi-Agent Setup</text>
+    
+    <!-- Bottom Glow Indicator -->
+    <rect x="0" y="127" width="245" height="3" rx="1.5" fill="url(#aiGrad)" filter="url(#glow)"/>
+  </g>
+
+  <!-- 2. Data Science & ML -->
+  <g transform="translate(307, 110)">
+    <rect width="245" height="130" rx="12" fill="rgba(255, 255, 255, 0.02)" stroke="rgba(163, 230, 53, 0.2)" stroke-width="1.2"/>
+    <circle cx="28" cy="28" r="14" fill="rgba(163, 230, 53, 0.1)"/>
+    <!-- Database vector -->
+    <path d="M21 21 q7 -3 14 0 v6 q-7 3 -14 0 z M21 27 q7 -3 14 0 v6 q-7 3 -14 0 z" stroke="#a3e635" stroke-width="1.2" fill="none"/>
+    <text x="50" y="27" fill="#ffffff" class="title-txt" font-size="12" font-weight="800">Data Science &amp; ML</text>
+    <text x="50" y="39" fill="#a3e635" class="lbl-txt" font-size="8" font-weight="700">95% EXPERTISE</text>
+    
+    <!-- Skills lines -->
+    <text x="14" y="68" fill="#e2e8f0" class="desc-txt" font-size="9.5" font-weight="700">· Deep Learning &amp; PyTorch</text>
+    <text x="14" y="84" fill="#e2e8f0" class="desc-txt" font-size="9.5" font-weight="700">· Predictive Analytics (SciKit/Stats)</text>
+    <text x="14" y="100" fill="#e2e8f0" class="desc-txt" font-size="9.5" font-weight="700">· 10,000+ Node Data Cleansing</text>
+
+    <!-- Bottom Glow -->
+    <rect x="0" y="127" width="245" height="3" rx="1.5" fill="url(#dataGrad)" filter="url(#glow)"/>
+  </g>
+
+  <!-- 3. Designing & WebGL -->
+  <g transform="translate(570, 110)">
+    <rect width="245" height="130" rx="12" fill="rgba(255, 255, 255, 0.02)" stroke="rgba(236, 72, 153, 0.2)" stroke-width="1.2"/>
+    <circle cx="28" cy="28" r="14" fill="rgba(236, 72, 153, 0.1)"/>
+    <!-- Palette vector -->
+    <path d="M22 25 c0-5 5-8 8-8 s6 3 6 8 s-5 7 -8 7 s-6-2 -6-7 z" stroke="#ec4899" stroke-width="1.2" fill="none"/>
+    <text x="50" y="27" fill="#ffffff" class="title-txt" font-size="12" font-weight="800">Designing &amp; WebGL</text>
+    <text x="50" y="39" fill="#ec4899" class="lbl-txt" font-size="8" font-weight="700">94% EXPERTISE</text>
+    
+    <!-- Skills lines -->
+    <text x="14" y="68" fill="#e2e8f0" class="desc-txt" font-size="9.5" font-weight="700">· Three.js (WebGL 3D Mechanics)</text>
+    <text x="14" y="84" fill="#e2e8f0" class="desc-txt" font-size="9.5" font-weight="700">· Figma Layout Architecture</text>
+    <text x="14" y="100" fill="#e2e8f0" class="desc-txt" font-size="9.5" font-weight="700">· Canvas Micro-Animations</text>
+
+    <!-- Bottom Glow -->
+    <rect x="0" y="127" width="245" height="3" rx="1.5" fill="url(#designGrad)" filter="url(#glow)"/>
+  </g>
+
+  <!-- 4. Cybersecurity -->
+  <g transform="translate(45, 255)">
+    <rect width="245" height="130" rx="12" fill="rgba(255, 255, 255, 0.02)" stroke="rgba(239, 68, 68, 0.2)" stroke-width="1.2"/>
+    <circle cx="28" cy="28" r="14" fill="rgba(239, 68, 68, 0.1)"/>
+    <!-- Shield vector -->
+    <path d="M21 21 v5 c0 5 4 8 7 9 c3-1 7-4 7-9 v-5 z" stroke="#ef4444" stroke-width="1.2" fill="none"/>
+    <text x="50" y="27" fill="#ffffff" class="title-txt" font-size="12" font-weight="800">Cybersecurity</text>
+    <text x="50" y="39" fill="#ef4444" class="lbl-txt" font-size="8" font-weight="700">92% EXPERTISE</text>
+    
+    <!-- Skills lines -->
+    <text x="14" y="68" fill="#e2e8f0" class="desc-txt" font-size="9.5" font-weight="700">· Threat &amp; Vulnerability Audits</text>
+    <text x="14" y="84" fill="#e2e8f0" class="desc-txt" font-size="9.5" font-weight="700">· Secure DevSecOps Pipelines</text>
+    <text x="14" y="100" fill="#e2e8f0" class="desc-txt" font-size="9.5" font-weight="700">· Identity Access Management (IAM)</text>
+
+    <!-- Bottom Glow -->
+    <rect x="0" y="127" width="245" height="3" rx="1.5" fill="url(#cyberGrad)" filter="url(#glow)"/>
+  </g>
+
+  <!-- 5. Growth & Marketing -->
+  <g transform="translate(307, 255)">
+    <rect width="245" height="130" rx="12" fill="rgba(255, 255, 255, 0.02)" stroke="rgba(249, 115, 22, 0.2)" stroke-width="1.2"/>
+    <circle cx="28" cy="28" r="14" fill="rgba(249, 115, 22, 0.1)"/>
+    <!-- Flame vector -->
+    <path d="M28 17 c-4 4-5 8-3 11 s5 3 6 0 s1-4-3-11 z" stroke="#f97316" stroke-width="1.2" fill="none"/>
+    <text x="50" y="27" fill="#ffffff" class="title-txt" font-size="12" font-weight="800">Growth Engineering</text>
+    <text x="50" y="39" fill="#f97316" class="lbl-txt" font-size="8" font-weight="700">94% EXPERTISE</text>
+    
+    <!-- Skills lines -->
+    <text x="14" y="68" fill="#e2e8f0" class="desc-txt" font-size="9.5" font-weight="700">· Growth Funnel Architectures</text>
+    <text x="14" y="84" fill="#e2e8f0" class="desc-txt" font-size="9.5" font-weight="700">· Search Engine SEO Optimization</text>
+    <text x="14" y="100" fill="#e2e8f0" class="desc-txt" font-size="9.5" font-weight="700">· Digital ROI Campaign Metrics</text>
+
+    <!-- Bottom Glow -->
+    <rect x="0" y="127" width="245" height="3" rx="1.5" fill="url(#cyberGrad)" filter="url(#glow)" style="filter: hue-rotate(45deg);"/>
+  </g>
+
+  <!-- 6. Operations & Management -->
+  <g transform="translate(570, 255)">
+    <rect width="245" height="130" rx="12" fill="rgba(255, 255, 255, 0.02)" stroke="rgba(20, 184, 166, 0.2)" stroke-width="1.2"/>
+    <circle cx="28" cy="28" r="14" fill="rgba(20, 184, 166, 0.1)"/>
+    <!-- Pulse vector -->
+    <path d="M18 28 h4 l3-8 l4 16 l3-11 l4 3 h4" stroke="#14b8a6" stroke-width="1.2" fill="none"/>
+    <text x="50" y="27" fill="#ffffff" class="title-txt" font-size="12" font-weight="800">Operations &amp; Ops</text>
+    <text x="50" y="39" fill="#14b8a6" class="lbl-txt" font-size="8" font-weight="700">95% EXPERTISE</text>
+    
+    <!-- Skills lines -->
+    <text x="14" y="68" fill="#e2e8f0" class="desc-txt" font-size="9.5" font-weight="700">· Strategic Case modeling</text>
+    <text x="14" y="84" fill="#e2e8f0" class="desc-txt" font-size="9.5" font-weight="700">· Agile/Scrum &amp; Six Sigma Roadmap</text>
+    <text x="14" y="100" fill="#e2e8f0" class="desc-txt" font-size="9.5" font-weight="700">· Excel Financial Analytics Modeling</text>
+
+    <!-- Bottom Glow -->
+    <rect x="0" y="127" width="245" height="3" rx="1.5" fill="url(#opsGrad)" filter="url(#glow)"/>
+  </g>
+</svg>

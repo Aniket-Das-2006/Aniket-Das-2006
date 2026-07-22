@@ -1,20 +1,20 @@
 <div align="center">
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
-<!--  BANNER GIF                                                   -->
+<!--  INTRO WIDGET: Night Sky, Shooting Stars & Walking Cat        -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
-<img src="./git-banner.gif" alt="Banner" width="100%"/>
+<img src="./profile-intro.svg?v=20260723_v10" alt="Aniket Das — Welcome" width="100%"/>
 
-<br/><br/>
+</div>
+
+<br/>
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
-<!--  ANIMATED SVG BANNER (Theme-Aware)                            -->
+<!--  SPECIALIZED TECH ARSENAL                                     -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./profile-banner-dark.svg?v=3">
-  <source media="(prefers-color-scheme: light)" srcset="./profile-banner-light.svg?v=3">
-  <img src="./profile-banner-dark.svg?v=3" alt="Aniket Das — AI Orchestrator" width="100%"/>
-</picture>
+<div align="center">
+
+<img src="./profile-skills.svg?v=20260723_v10" alt="Specialized Skills" width="100%"/>
 
 </div>
 
@@ -24,15 +24,15 @@
 <!--  LANYARD ID BADGE + PROJECTS TABLE                            -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
 
-<table align="center" border="0">
+<table align="center" border="0" width="100%">
 <tr>
-<td width="40%" align="center" valign="middle">
+<td width="42%" align="center" valign="middle">
 
-<!-- 🪪 Swinging Lanyard ID Card (3D Glossy, Blue & Lavender, Interactive) -->
-<img src="./profile-lanyard.svg?v=20260723_v6" alt="Aniket Das ID Badge" width="360"/>
+<!-- Swinging Lanyard ID Card (3D Glossy, Real-time Base64 Portrait) -->
+<img src="./profile-lanyard.svg?v=20260723_v10" alt="Aniket Das ID Badge" width="370"/>
 
 </td>
-<td width="60%" valign="middle">
+<td width="58%" valign="middle">
 
 ### 🚀 Selected Work & Endeavors
 
@@ -59,9 +59,33 @@
 <br/>
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
-<!--  GITHUB STATS (Side by Side, Matching Blue & Lavender Theme)  -->
+<!--  REAL-TIME AUTOMATED STATUS TRACKING                           -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
+<div align="center">
 
+### 📊 Real-Time GitHub Telemetry
+
+<table border="0" align="center">
+  <tr>
+    <td align="center" width="30%">
+      <img src="https://img.shields.io/badge/dynamic/json?color=3b82f6&label=Repositories&query=%24.public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2FAniket-Das-2006&style=for-the-badge&logo=github" alt="Repositories"/>
+    </td>
+    <td align="center" width="30%">
+      <img src="https://img.shields.io/badge/dynamic/json?color=818cf8&label=Followers&query=%24.followers&url=https%3A%2F%2Fapi.github.com%2Fusers%2FAniket-Das-2006&style=for-the-badge&logo=github" alt="Followers"/>
+    </td>
+    <td align="center" width="30%">
+      <img src="https://img.shields.io/github/stars/Aniket-Das-2006/Aniket-Das-2006?style=for-the-badge&color=c4b5fd&label=Profile%20Stars" alt="Stars"/>
+    </td>
+  </tr>
+</table>
+
+</div>
+
+<br/>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--  GITHUB STATS & TOP LANGS (Cohesive Theme)                     -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
 <div align="center">
 
 <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=Aniket-Das-2006&show_icons=true&bg_color=0d1117&title_color=818cf8&text_color=c4b5fd&icon_color=3b82f6&border_color=1e293b&ring_color=818cf8&hide_border=false&count_private=true&rank_icon=github&custom_title=Aniket%20Das's%20GitHub%20Stats" width="49%" alt="GitHub Stats"/>
@@ -72,9 +96,8 @@
 <br/>
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
-<!--  STREAK STATS                                                 -->
+<!--  GITHUB STREAK STATS                                           -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
-
 <div align="center">
 
 <img src="https://streak-stats.demolab.com?user=Aniket-Das-2006&theme=transparent&border=1e293b&ring=818cf8&fire=3b82f6&currStreakLabel=c4b5fd&sideLabels=818cf8&currStreakNum=ffffff&sideNums=c4b5fd&dates=64748b&background=0d1117" width="60%" alt="GitHub Streak"/>
@@ -84,9 +107,8 @@
 <br/>
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
-<!--  CONTRIBUTION GRAPH                                           -->
+<!--  CONTRIBUTION DENSITY GRAPH                                    -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
-
 <div align="center">
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Aniket-Das-2006&bg_color=0d1117&color=818cf8&line=3b82f6&point=c4b5fd&area_color=818cf8&area=true&hide_border=false&custom_title=Contribution%20Graph&border_color=1e293b" width="95%" alt="Contribution Graph"/>
@@ -102,7 +124,6 @@
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <!--  TROPHIES                                                     -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
-
 <div align="center">
 
 <img src="https://github-trophies.vercel.app/?username=Aniket-Das-2006&theme=algolia&no-frame=true&no-bg=true&column=6&margin-w=10" width="95%" alt="Trophies"/>
@@ -118,7 +139,6 @@
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <!--  CONTRIBUTION SNAKE                                           -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
-
 <div align="center">
 
 <picture>
@@ -138,7 +158,6 @@
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <!--  OCTOCAT PAINTER LOOP                                         -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
-
 <div align="center">
 
 <img src="./github-painter-loop.svg" alt="Octocat Painter Loop" width="280"/>
@@ -158,7 +177,6 @@
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <!--  TECH STACK BADGES                                            -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
-
 <div align="center">
 
 <img src="https://img.shields.io/badge/Python-3b82f6?style=for-the-badge&logo=python&logoColor=white" />
@@ -191,7 +209,6 @@
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <!--  PROFILE BADGES + VIEWS                                       -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
-
 <div align="center">
 
 <img src="https://img.shields.io/badge/IIM_Sambalpur-Batch_2029-3b82f6?style=for-the-badge&logo=google-scholar&logoColor=white" />
@@ -221,7 +238,6 @@
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <!--  FOOTER                                                       -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
-
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,14,30&height=120&section=footer&fontSize=0" width="100%"/>

@@ -1,0 +1,229 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 380" width="860" height="380">
+  <defs>
+    <!-- Background Gradient: Dark Violet & Black Night Sky -->
+    <linearGradient id="nightSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#07040d"/>
+      <stop offset="60%" stop-color="#110a24"/>
+      <stop offset="100%" stop-color="#07040d"/>
+    </linearGradient>
+
+    <!-- Glassmorphic Card Background -->
+    <linearGradient id="cardBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.01"/>
+    </linearGradient>
+
+    <!-- Text Gradients -->
+    <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c4b5fd"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+
+    <linearGradient id="catGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c4b5fd"/>
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;700&family=Outfit:wght@700;900&family=Space+Grotesk:wght@500;700&display=swap');
+    
+    .terminal-txt { font-family: 'Fira Code', monospace; }
+    .display-txt { font-family: 'Outfit', sans-serif; }
+    .body-txt { font-family: 'Space Grotesk', sans-serif; }
+
+    /* Twinkling Stars */
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.2; transform: scale(0.8); }
+      50% { opacity: 1; transform: scale(1.2); }
+    }
+    .star { fill: #c4b5fd; opacity: 0.4; }
+    .star-1 { animation: twinkle 3s ease-in-out infinite; }
+    .star-2 { animation: twinkle 4s ease-in-out infinite 1s; }
+    .star-3 { animation: twinkle 5s ease-in-out infinite 2s; }
+
+    /* Shooting Stars */
+    @keyframes shooting {
+      0% { transform: translate(0, 0) scale(0); opacity: 0; }
+      1% { opacity: 1; }
+      8% { transform: translate(-180px, 180px) scale(1); opacity: 0.8; }
+      15%, 100% { transform: translate(-300px, 300px) scale(0); opacity: 0; }
+    }
+    .shooting-star {
+      stroke: #818cf8;
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      opacity: 0;
+      animation: shooting 7s linear infinite;
+    }
+
+    /* Walking Cat Animation - Right to Left, turn around, Left to Right */
+    @keyframes catMove {
+      0% { transform: translateX(810px) scaleX(1); }
+      47% { transform: translateX(50px) scaleX(1); }
+      50% { transform: translateX(50px) scaleX(-1); }
+      97% { transform: translateX(810px) scaleX(-1); }
+      100% { transform: translateX(810px) scaleX(1); }
+    }
+    @keyframes catLegs {
+      0%, 100% { d: path('M 0,0 L -4,12 M 4,0 L 8,12 M 12,0 L 10,12 M 18,0 L 22,12'); }
+      50% { d: path('M 0,0 L 2,12 M 4,0 L 0,12 M 12,0 L 16,12 M 18,0 L 14,12'); }
+    }
+    @keyframes catTail {
+      0%, 100% { transform: rotate(-5deg); }
+      50% { transform: rotate(15deg); }
+    }
+
+    .cat-group {
+      animation: catMove 24s linear infinite;
+    }
+    .cat-leg-path {
+      stroke: url(#catGrad);
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      animation: catLegs 0.28s linear infinite;
+    }
+    .cat-tail {
+      transform-origin: 22px -3px;
+      animation: catTail 1s ease-in-out infinite alternate;
+    }
+  </style>
+
+  <!-- Background Sky -->
+  <rect width="860" height="380" fill="url(#nightSky)" rx="16"/>
+
+  <!-- Static Stars Field -->
+  <g>
+    <circle cx="120" cy="50" r="1" class="star star-1"/>
+    <circle cx="280" cy="70" r="1.5" class="star star-2"/>
+    <circle cx="430" cy="40" r="1" class="star star-3"/>
+    <circle cx="650" cy="80" r="1.2" class="star star-1"/>
+    <circle cx="780" cy="60" r="1" class="star star-2"/>
+    <circle cx="90" cy="180" r="1" class="star star-3"/>
+    <circle cx="810" cy="190" r="1.5" class="star star-1"/>
+    <circle cx="340" cy="220" r="1" class="star star-2"/>
+  </g>
+
+  <!-- Shooting Stars -->
+  <line x1="750" y1="20" x2="810" y2="-40" class="shooting-star" style="animation-delay: 0.5s;"/>
+  <line x1="450" y1="30" x2="510" y2="-30" class="shooting-star" style="animation-delay: 3s;"/>
+  <line x1="250" y1="10" x2="310" y2="-50" class="shooting-star" style="animation-delay: 5s;"/>
+
+  <!-- Terminal Window Container -->
+  <g transform="translate(45, 30)">
+    <!-- Glassmorphic Window border and shadow -->
+    <rect width="770" height="285" rx="16" fill="url(#cardBg)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1.2"/>
+    
+    <!-- Terminal Header Bar -->
+    <rect width="770" height="32" rx="16" fill="rgba(7, 4, 13, 0.5)"/>
+    <circle cx="20" cy="16" r="5" fill="#ef4444"/>
+    <circle cx="36" cy="16" r="5" fill="#f59e0b"/>
+    <circle cx="52" cy="16" r="5" fill="#10b981"/>
+    <text x="385" y="21" text-anchor="middle" fill="#64748b" class="terminal-txt" font-size="11" font-weight="700">aniket@orchestrator: ~</text>
+
+    <!-- Shell prompt -->
+    <text x="25" y="65" fill="#3b82f6" class="terminal-txt" font-size="12" font-weight="700">aniket@orchestrator:~$</text>
+    <text x="205" y="65" fill="#ffffff" class="terminal-txt" font-size="12">cat intro.md</text>
+
+    <!-- Welcome Display Text -->
+    <text x="25" y="98" fill="#94a3b8" class="body-txt" font-size="14" font-weight="500">Hi, I'm</text>
+    
+    <!-- ANIKET DAS (Bold premium typography) -->
+    <text x="25" y="146" fill="url(#nameGrad)" class="display-txt" font-size="44" font-weight="900" filter="url(#glow)">ANIKET DAS 💜</text>
+
+    <!-- Subtitle Title -->
+    <text x="25" y="180" fill="#a5b4fc" class="body-txt" font-size="15" font-weight="700" letter-spacing="3">AI ORCHESTRATOR &amp; DATA SCIENTIST</text>
+
+    <!-- Description Block -->
+    <rect x="25" y="196" width="380" height="1" fill="rgba(129, 140, 248, 0.2)"/>
+    <text x="25" y="218" fill="#64748b" class="terminal-txt" font-size="11">&gt; I build neural pipelines and agentic frameworks.</text>
+    <text x="25" y="235" fill="#64748b" class="terminal-txt" font-size="11">&gt; Former IIT Madras DS student · IIM Sambalpur '29.</text>
+
+    <!-- Tech Badges Group -->
+    <g transform="translate(25, 252)">
+      <!-- Python -->
+      <g transform="translate(0, 0)">
+        <rect width="64" height="20" rx="4" fill="rgba(59, 130, 246, 0.12)" stroke="rgba(59, 130, 246, 0.3)" stroke-width="0.8"/>
+        <text x="32" y="14" text-anchor="middle" fill="#60a5fa" class="terminal-txt" font-size="10" font-weight="700">Python</text>
+      </g>
+      <!-- PyTorch -->
+      <g transform="translate(70, 0)">
+        <rect width="70" height="20" rx="4" fill="rgba(236, 72, 153, 0.12)" stroke="rgba(236, 72, 153, 0.3)" stroke-width="0.8"/>
+        <text x="35" y="14" text-anchor="middle" fill="#f472b6" class="terminal-txt" font-size="10" font-weight="700">PyTorch</text>
+      </g>
+      <!-- Agentic AI -->
+      <g transform="translate(146, 0)">
+        <rect width="90" height="20" rx="4" fill="rgba(168, 85, 247, 0.12)" stroke="rgba(168, 85, 247, 0.3)" stroke-width="0.8"/>
+        <text x="45" y="14" text-anchor="middle" fill="#c084fc" class="terminal-txt" font-size="10" font-weight="700">Agentic AI</text>
+      </g>
+      <!-- RAG API -->
+      <g transform="translate(242, 0)">
+        <rect width="84" height="20" rx="4" fill="rgba(16, 185, 129, 0.12)" stroke="rgba(16, 185, 129, 0.3)" stroke-width="0.8"/>
+        <text x="42" y="14" text-anchor="middle" fill="#34d399" class="terminal-txt" font-size="10" font-weight="700">n8n / CrewAI</text>
+      </g>
+    </g>
+
+    <!-- Side-by-Side Premium Visual Illustration -->
+    <!-- Represents the Developer coding in an abstract cool way -->
+    <g transform="translate(480, 52)">
+      <!-- Outer computer frame -->
+      <rect width="250" height="200" rx="12" fill="#07040d" stroke="rgba(129, 140, 248, 0.15)" stroke-width="1.2"/>
+      
+      <!-- Inner Screen showing data visual -->
+      <rect x="8" y="8" width="234" height="184" rx="8" fill="#0d081b"/>
+      
+      <!-- Waveforms (Data visualization) -->
+      <path d="M15 150 Q45 100 75 130 T135 70 T195 140 T230 110" fill="none" stroke="#3b82f6" stroke-width="2.5" opacity="0.6"/>
+      <path d="M15 150 Q45 120 75 140 T135 90 T195 120 T230 90" fill="none" stroke="#818cf8" stroke-width="2" opacity="0.8"/>
+      
+      <!-- Bar chart overlay -->
+      <rect x="30" y="40" width="10" height="50" rx="2" fill="#818cf8" opacity="0.4"/>
+      <rect x="48" y="25" width="10" height="65" rx="2" fill="#3b82f6" opacity="0.5"/>
+      <rect x="66" y="55" width="10" height="35" rx="2" fill="#c4b5fd" opacity="0.6"/>
+      <rect x="84" y="15" width="10" height="75" rx="2" fill="#818cf8" opacity="0.7"/>
+
+      <!-- Glowing Nodes connected by lines -->
+      <line x1="140" y1="50" x2="180" y2="30" stroke="#818cf8" stroke-dasharray="2 2" stroke-width="1"/>
+      <line x1="180" y1="30" x2="210" y2="70" stroke="#c4b5fd" stroke-dasharray="2 2" stroke-width="1"/>
+      <line x1="140" y1="50" x2="170" y2="90" stroke="#3b82f6" stroke-dasharray="2 2" stroke-width="1"/>
+      
+      <circle cx="140" cy="50" r="4" fill="#818cf8" filter="url(#glow)"/>
+      <circle cx="180" cy="30" r="5" fill="#3b82f6" filter="url(#glow)"/>
+      <circle cx="210" cy="70" r="3.5" fill="#c4b5fd" filter="url(#glow)"/>
+      <circle cx="170" cy="90" r="4" fill="#818cf8" filter="url(#glow)"/>
+
+      <!-- Console log text -->
+      <text x="20" y="170" fill="#64748b" class="terminal-txt" font-size="8">~ system initialized successfully</text>
+      <text x="20" y="180" fill="#34d399" class="terminal-txt" font-size="8">active_agent_orchestrator: true</text>
+    </g>
+  </g>
+
+  <!-- Walking Cat on the Ground (Walking back and forth on the floor) -->
+  <g class="cat-group" transform="translate(0, 342)">
+    <!-- Cat legs (animated via path change) -->
+    <path class="cat-leg-path" d="M 0,0 L -4,12 M 4,0 L 8,12 M 12,0 L 10,12 M 18,0 L 22,12"/>
+    
+    <!-- Cat body -->
+    <ellipse cx="9" cy="-3" rx="12" ry="7" fill="url(#catGrad)"/>
+    <!-- Cat head -->
+    <circle cx="-5" cy="-7" r="6.5" fill="url(#catGrad)"/>
+    <!-- Cat ears -->
+    <polygon points="-8,-12 -11,-18 -4,-12" fill="url(#catGrad)"/>
+    <polygon points="-3,-12 0,-18 3,-12" fill="url(#catGrad)"/>
+    <!-- Cat tail -->
+    <path class="cat-tail" d="M 20,-3 C 25,-12 28,-18 24,-24 C 22,-27 25,-26 27,-23 C 32,-14 27,-7 20,-3 Z" fill="url(#catGrad)"/>
+  </g>
+
+  <!-- Ground Accent Line -->
+  <line x1="45" y1="355" x2="815" y2="355" stroke="rgba(129, 140, 248, 0.18)" stroke-width="1.5" stroke-dasharray="8 8"/>
+</svg>
