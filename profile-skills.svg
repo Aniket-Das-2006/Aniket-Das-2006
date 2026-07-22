@@ -31,6 +31,15 @@
     .title-txt { font-family: 'Outfit', sans-serif; }
     .desc-txt { font-family: 'Space Grotesk', sans-serif; }
 
+    @keyframes neonGlow {
+      0%, 100% { stroke: #818cf8; filter: drop-shadow(0 0 3px #818cf8); }
+      50% { stroke: #f472b6; filter: drop-shadow(0 0 7px #f472b6); }
+    }
+    .neon-box {
+      stroke-width: 2;
+      animation: neonGlow 4s ease-in-out infinite;
+    }
+
     @keyframes pulseGlow {
       0%, 100% { opacity: 0.15; }
       50% { opacity: 0.35; }
@@ -40,6 +49,9 @@
 
   <!-- Background Sky -->
   <rect width="860" height="420" fill="url(#nightSky)" rx="16"/>
+
+  <!-- Animated Neon Border Box -->
+  <rect x="1" y="1" width="858" height="418" rx="16" fill="none" class="neon-box"/>
 
   <!-- Static Stars Field -->
   <circle cx="90" cy="80" r="1" fill="#c4b5fd" opacity="0.3"/>

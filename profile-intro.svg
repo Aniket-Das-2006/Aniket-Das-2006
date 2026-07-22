@@ -42,6 +42,15 @@
     .display-txt { font-family: 'Outfit', sans-serif; }
     .body-txt { font-family: 'Space Grotesk', sans-serif; }
 
+    @keyframes neonGlow {
+      0%, 100% { stroke: #818cf8; filter: drop-shadow(0 0 3px #818cf8); }
+      50% { stroke: #f472b6; filter: drop-shadow(0 0 7px #f472b6); }
+    }
+    .neon-box {
+      stroke-width: 2;
+      animation: neonGlow 4s ease-in-out infinite;
+    }
+
     /* Twinkling Stars */
     @keyframes twinkle {
       0%, 100% { opacity: 0.2; transform: scale(0.8); }
@@ -67,13 +76,13 @@
       animation: shooting 7s linear infinite;
     }
 
-    /* Walking Cat Animation - Right to Left, turn around, Left to Right */
+    /* Walking Cat Animation - Inside Terminal Card Bottom */
     @keyframes catMove {
-      0% { transform: translateX(810px) scaleX(1); }
-      47% { transform: translateX(50px) scaleX(1); }
-      50% { transform: translateX(50px) scaleX(-1); }
-      97% { transform: translateX(810px) scaleX(-1); }
-      100% { transform: translateX(810px) scaleX(1); }
+      0% { transform: translate(720px, 268px) scaleX(1); }
+      47% { transform: translate(30px, 268px) scaleX(1); }
+      50% { transform: translate(30px, 268px) scaleX(-1); }
+      97% { transform: translate(720px, 268px) scaleX(-1); }
+      100% { transform: translate(720px, 268px) scaleX(1); }
     }
     @keyframes catLegs {
       0%, 100% { d: path('M 0,0 L -4,12 M 4,0 L 8,12 M 12,0 L 10,12 M 18,0 L 22,12'); }
@@ -101,6 +110,9 @@
 
   <!-- Background Sky -->
   <rect width="860" height="380" fill="url(#nightSky)" rx="16"/>
+
+  <!-- Animated Neon Border Box -->
+  <rect x="1" y="1" width="858" height="378" rx="16" fill="none" class="neon-box"/>
 
   <!-- Static Stars Field -->
   <g>
@@ -144,32 +156,34 @@
     <!-- Subtitle Title -->
     <text x="25" y="180" fill="#a5b4fc" class="body-txt" font-size="15" font-weight="700" letter-spacing="3">AI ORCHESTRATOR &amp; DATA SCIENTIST</text>
 
-    <!-- Description Block -->
-    <rect x="25" y="196" width="380" height="1" fill="rgba(129, 140, 248, 0.2)"/>
-    <text x="25" y="218" fill="#64748b" class="terminal-txt" font-size="11">&gt; I build neural pipelines and agentic frameworks.</text>
-    <text x="25" y="235" fill="#64748b" class="terminal-txt" font-size="11">&gt; Former IIT Madras DS student · IIM Sambalpur '29.</text>
-
     <!-- Tech Badges Group -->
-    <g transform="translate(25, 252)">
-      <!-- Python -->
+    <g transform="translate(25, 202)">
+      <!-- Row 1: Agentic AI -->
       <g transform="translate(0, 0)">
-        <rect width="64" height="20" rx="4" fill="rgba(59, 130, 246, 0.12)" stroke="rgba(59, 130, 246, 0.3)" stroke-width="0.8"/>
-        <text x="32" y="14" text-anchor="middle" fill="#60a5fa" class="terminal-txt" font-size="10" font-weight="700">Python</text>
+        <rect width="115" height="24" rx="12" fill="rgba(168, 85, 247, 0.12)" stroke="rgba(168, 85, 247, 0.3)" stroke-width="1"/>
+        <circle cx="16" cy="12" r="5" fill="none" stroke="#c084fc" stroke-width="1.2"/>
+        <circle cx="16" cy="12" r="2" fill="#c084fc"/>
+        <text x="28" y="16" fill="#c084fc" class="terminal-txt" font-size="10.5" font-weight="700">Agentic AI</text>
       </g>
-      <!-- PyTorch -->
-      <g transform="translate(70, 0)">
-        <rect width="70" height="20" rx="4" fill="rgba(236, 72, 153, 0.12)" stroke="rgba(236, 72, 153, 0.3)" stroke-width="0.8"/>
-        <text x="35" y="14" text-anchor="middle" fill="#f472b6" class="terminal-txt" font-size="10" font-weight="700">PyTorch</text>
+      <!-- Row 1: Open Claw -->
+      <g transform="translate(125, 0)">
+        <rect width="110" height="24" rx="12" fill="rgba(6, 182, 212, 0.12)" stroke="rgba(6, 182, 212, 0.3)" stroke-width="1"/>
+        <path d="M12,16 L16,12 L12,8 M16,12 L20,12" stroke="#22d3ee" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <text x="28" y="16" fill="#22d3ee" class="terminal-txt" font-size="10.5" font-weight="700">Open Claw</text>
       </g>
-      <!-- Agentic AI -->
-      <g transform="translate(146, 0)">
-        <rect width="90" height="20" rx="4" fill="rgba(168, 85, 247, 0.12)" stroke="rgba(168, 85, 247, 0.3)" stroke-width="0.8"/>
-        <text x="45" y="14" text-anchor="middle" fill="#c084fc" class="terminal-txt" font-size="10" font-weight="700">Agentic AI</text>
+      <!-- Row 2: Rag Pipelines -->
+      <g transform="translate(0, 34)">
+        <rect width="125" height="24" rx="12" fill="rgba(16, 185, 129, 0.12)" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1"/>
+        <path d="M11,10 Q16,8 21,10 V14 Q16,16 11,14 Z" fill="none" stroke="#34d399" stroke-width="1.2"/>
+        <path d="M11,14 Q16,12 21,14" fill="none" stroke="#34d399" stroke-width="1.2"/>
+        <text x="28" y="16" fill="#34d399" class="terminal-txt" font-size="10.5" font-weight="700">Rag Pipelines</text>
       </g>
-      <!-- RAG API -->
-      <g transform="translate(242, 0)">
-        <rect width="84" height="20" rx="4" fill="rgba(16, 185, 129, 0.12)" stroke="rgba(16, 185, 129, 0.3)" stroke-width="0.8"/>
-        <text x="42" y="14" text-anchor="middle" fill="#34d399" class="terminal-txt" font-size="10" font-weight="700">n8n / CrewAI</text>
+      <!-- Row 2: VibeCoding -->
+      <g transform="translate(135, 34)">
+        <rect width="115" height="24" rx="12" fill="rgba(236, 72, 153, 0.12)" stroke="rgba(236, 72, 153, 0.3)" stroke-width="1"/>
+        <path d="M14,12 L18,12 M16,10 L16,14" stroke="#f472b6" stroke-width="1.2" stroke-linecap="round"/>
+        <path d="M11,9 L13,11 M13,9 L11,11" stroke="#f472b6" stroke-width="1.2" stroke-linecap="round"/>
+        <text x="28" y="16" fill="#f472b6" class="terminal-txt" font-size="10.5" font-weight="700">VibeCoding</text>
       </g>
     </g>
 
@@ -205,25 +219,15 @@
       <!-- Console log text -->
       <text x="20" y="170" fill="#64748b" class="terminal-txt" font-size="8">~ system initialized successfully</text>
       <text x="20" y="180" fill="#34d399" class="terminal-txt" font-size="8">active_agent_orchestrator: true</text>
+      <!-- Walking Cat inside terminal card -->
+      <g class="cat-group">
+        <path class="cat-leg-path" d="M 0,0 L -4,12 M 4,0 L 8,12 M 12,0 L 10,12 M 18,0 L 22,12"/>
+        <ellipse cx="9" cy="-3" rx="12" ry="7" fill="url(#catGrad)"/>
+        <circle cx="-5" cy="-7" r="6.5" fill="url(#catGrad)"/>
+        <polygon points="-8,-12 -11,-18 -4,-12" fill="url(#catGrad)"/>
+        <polygon points="-3,-12 0,-18 3,-12" fill="url(#catGrad)"/>
+        <path class="cat-tail" d="M 20,-3 C 25,-12 28,-18 24,-24 C 22,-27 25,-26 27,-23 C 32,-14 27,-7 20,-3 Z" fill="url(#catGrad)"/>
+      </g>
     </g>
   </g>
-
-  <!-- Walking Cat on the Ground (Walking back and forth on the floor) -->
-  <g class="cat-group" transform="translate(0, 342)">
-    <!-- Cat legs (animated via path change) -->
-    <path class="cat-leg-path" d="M 0,0 L -4,12 M 4,0 L 8,12 M 12,0 L 10,12 M 18,0 L 22,12"/>
-    
-    <!-- Cat body -->
-    <ellipse cx="9" cy="-3" rx="12" ry="7" fill="url(#catGrad)"/>
-    <!-- Cat head -->
-    <circle cx="-5" cy="-7" r="6.5" fill="url(#catGrad)"/>
-    <!-- Cat ears -->
-    <polygon points="-8,-12 -11,-18 -4,-12" fill="url(#catGrad)"/>
-    <polygon points="-3,-12 0,-18 3,-12" fill="url(#catGrad)"/>
-    <!-- Cat tail -->
-    <path class="cat-tail" d="M 20,-3 C 25,-12 28,-18 24,-24 C 22,-27 25,-26 27,-23 C 32,-14 27,-7 20,-3 Z" fill="url(#catGrad)"/>
-  </g>
-
-  <!-- Ground Accent Line -->
-  <line x1="45" y1="355" x2="815" y2="355" stroke="rgba(129, 140, 248, 0.18)" stroke-width="1.5" stroke-dasharray="8 8"/>
 </svg>
