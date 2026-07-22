@@ -64,8 +64,8 @@
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Aniket-Das-2006&show_icons=true&bg_color=0d1117&title_color=818cf8&text_color=c4b5fd&icon_color=3b82f6&border_color=1e293b&ring_color=818cf8&hide_border=false&count_private=true&rank_icon=github&custom_title=Aniket%20Das's%20GitHub%20Stats" width="49%" alt="GitHub Stats"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Aniket-Das-2006&layout=compact&bg_color=0d1117&title_color=818cf8&text_color=c4b5fd&border_color=1e293b&hide_border=false&langs_count=8" width="41%" alt="Top Languages"/>
+<img src="https://github-readme-stats-sigma-five.vercel.app/api?username=Aniket-Das-2006&show_icons=true&bg_color=0d1117&title_color=818cf8&text_color=c4b5fd&icon_color=3b82f6&border_color=1e293b&ring_color=818cf8&hide_border=false&count_private=true&rank_icon=github&custom_title=Aniket%20Das's%20GitHub%20Stats" width="49%" alt="GitHub Stats"/>
+<img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Aniket-Das-2006&layout=compact&bg_color=0d1117&title_color=818cf8&text_color=c4b5fd&border_color=1e293b&hide_border=false&langs_count=8" width="41%" alt="Top Languages"/>
 
 </div>
 
@@ -105,7 +105,7 @@
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=Aniket-Das-2006&theme=algolia&no-frame=true&no-bg=true&column=6&margin-w=10" width="95%" alt="Trophies"/>
+<img src="https://github-trophies.vercel.app/?username=Aniket-Das-2006&theme=algolia&no-frame=true&no-bg=true&column=6&margin-w=10" width="95%" alt="Trophies"/>
 
 </div>
 
