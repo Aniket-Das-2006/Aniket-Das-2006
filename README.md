@@ -3,7 +3,7 @@
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <!--  INTRO WIDGET: Night Sky, Shooting Stars & Walking Cat        -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
-<img src="https://raw.githubusercontent.com/Aniket-Das-2006/Aniket-Das-2006/main/profile-intro.svg?v=20260723_v16" alt="Aniket Das — Welcome" width="100%"/>
+<img src="https://raw.githubusercontent.com/Aniket-Das-2006/Aniket-Das-2006/main/profile-intro.svg?v=20260723_v17" alt="Aniket Das — Welcome" width="100%"/>
 
 </div>
 
@@ -14,7 +14,7 @@
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Aniket-Das-2006/Aniket-Das-2006/main/profile-skills.svg?v=20260723_v16" alt="Specialized Skills" width="100%"/>
+<img src="https://raw.githubusercontent.com/Aniket-Das-2006/Aniket-Das-2006/main/profile-skills.svg?v=20260723_v17" alt="Specialized Skills" width="100%"/>
 
 </div>
 
@@ -30,7 +30,7 @@
 <table align="center" border="0" width="100%">
 <tr>
 <td width="40%" align="center" valign="middle">
-<img src="https://raw.githubusercontent.com/Aniket-Das-2006/Aniket-Das-2006/main/profile-lanyard.svg?v=20260723_v16" alt="Aniket Das ID Badge" width="310"/>
+<img src="https://raw.githubusercontent.com/Aniket-Das-2006/Aniket-Das-2006/main/profile-lanyard.svg?v=20260723_v17" alt="Aniket Das ID Badge" width="310"/>
 </td>
 <td width="60%" valign="top">
 <h3 style="color: #ffffff; font-family: sans-serif; margin-top: 0;">🚀 Selected Work &amp; Endeavors</h3>
@@ -142,7 +142,7 @@
 <table bgcolor="#07040d" width="100%" border="2" bordercolor="#06b6d4" cellpadding="15" style="border-collapse: collapse; border-radius: 16px;">
 <tr>
 <td align="center">
-<img src="https://raw.githubusercontent.com/Aniket-Das-2006/Aniket-Das-2006/main/github-painter-loop.svg?v=20260723_v16" alt="Octocat Painter Loop" width="280"/>
+<img src="https://raw.githubusercontent.com/Aniket-Das-2006/Aniket-Das-2006/main/github-painter-loop.svg?v=20260723_v17" alt="Octocat Painter Loop" width="280"/>
 <br/>
 <sub style="color: #64748b; font-family: sans-serif;">Stroke-dashoffset vector animation · GitHub Octocat · Infinite loop</sub>
 <br/><br/>
