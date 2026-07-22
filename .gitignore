@@ -1,0 +1,34 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules/
+dashboard/node_modules/
+jspm_packages/
+
+# Compiler outputs
+dist/
+dashboard/dist/
+tmp/
+out/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Custom compiled outputs (optional, but let's keep templates and python scripts out of root if not needed, wait, user wants to copy/paste the whole repo, so we should commit them)
