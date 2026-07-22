@@ -3,7 +3,7 @@
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <!--  INTRO WIDGET: Night Sky, Shooting Stars & Walking Cat        -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
-<img src="https://raw.githubusercontent.com/Aniket-Das-2006/Aniket-Das-2006/main/profile-intro.svg?v=20260723_v12" alt="Aniket Das — Welcome" width="100%"/>
+<img src="https://raw.githubusercontent.com/Aniket-Das-2006/Aniket-Das-2006/main/profile-intro.svg?v=20260723_v15" alt="Aniket Das — Welcome" width="100%"/>
 
 </div>
 
@@ -14,7 +14,7 @@
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Aniket-Das-2006/Aniket-Das-2006/main/profile-skills.svg?v=20260723_v12" alt="Specialized Skills" width="100%"/>
+<img src="https://raw.githubusercontent.com/Aniket-Das-2006/Aniket-Das-2006/main/profile-skills.svg?v=20260723_v15" alt="Specialized Skills" width="100%"/>
 
 </div>
 
@@ -29,7 +29,7 @@
 <td width="42%" align="center" valign="middle">
 
 <!-- Swinging Lanyard ID Card (3D Glossy, Real-time Base64 Portrait) -->
-<img src="https://raw.githubusercontent.com/Aniket-Das-2006/Aniket-Das-2006/main/profile-lanyard.svg?v=20260723_v12" alt="Aniket Das ID Badge" width="370"/>
+<img src="https://raw.githubusercontent.com/Aniket-Das-2006/Aniket-Das-2006/main/profile-lanyard.svg?v=20260723_v15" alt="Aniket Das ID Badge" width="370"/>
 
 </td>
 <td width="58%" valign="middle">
@@ -160,7 +160,7 @@
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Aniket-Das-2006/Aniket-Das-2006/main/github-painter-loop.svg?v=20260723_v12" alt="Octocat Painter Loop" width="280"/>
+<img src="https://raw.githubusercontent.com/Aniket-Das-2006/Aniket-Das-2006/main/github-painter-loop.svg?v=20260723_v15" alt="Octocat Painter Loop" width="280"/>
 
 <br/>
 

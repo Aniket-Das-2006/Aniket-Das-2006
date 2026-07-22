@@ -2,7 +2,7 @@
 <title>Aniket Das — Executive ID Badge</title>
 <defs>
 <style type="text/css"><![CDATA[
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Space+Grotesk:wght@500;600;700&family=Fira+Code:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&amp;family=Space+Grotesk:wght@500;600;700&amp;family=Fira+Code:wght@500;700&amp;display=swap');
 
 text { font-family: 'Space Grotesk', 'Fira Code', -apple-system, sans-serif; }
 

@@ -25,7 +25,7 @@
   </defs>
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;700&family=Outfit:wght@700;800&family=Space+Grotesk:wght@500;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;700&amp;family=Outfit:wght@700;800&amp;family=Space+Grotesk:wght@500;700&amp;display=swap');
     
     .lbl-txt { font-family: 'Fira Code', monospace; }
     .title-txt { font-family: 'Outfit', sans-serif; }

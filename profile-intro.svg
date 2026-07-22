@@ -36,7 +36,7 @@
   </defs>
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;700&family=Outfit:wght@700;900&family=Space+Grotesk:wght@500;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;700&amp;family=Outfit:wght@700;900&amp;family=Space+Grotesk:wght@500;700&amp;display=swap');
     
     .terminal-txt { font-family: 'Fira Code', monospace; }
     .display-txt { font-family: 'Outfit', sans-serif; }
