@@ -1,305 +1,254 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 660" width="420" height="660" role="img" aria-label="Aniket Das ID card lanyard">
-<title>Aniket Das — Swinging 3D Glossy ID Badge</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 680" width="420" height="680" role="img" aria-label="Aniket Das ID card lanyard">
+<title>Aniket Das — Executive ID Badge</title>
 <defs>
 <style type="text/css"><![CDATA[
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;800;900&family=Space+Grotesk:wght@500;700&family=Fira+Code:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Space+Grotesk:wght@500;600;700&family=Fira+Code:wght@500;700&display=swap');
 
 text { font-family: 'Space Grotesk', 'Fira Code', -apple-system, sans-serif; }
 
 @keyframes settle {
-  0% { transform: rotate(0deg) translateY(-660px); }
+  0% { transform: rotate(0deg) translateY(-680px); }
   18% { transform: rotate(0deg) translateY(0); }
-  30% { transform: rotate(14deg); }
-  46% { transform: rotate(-10deg); }
-  62% { transform: rotate(7deg); }
-  78% { transform: rotate(-4deg); }
-  92% { transform: rotate(2deg); }
+  30% { transform: rotate(13deg); }
+  46% { transform: rotate(-9deg); }
+  62% { transform: rotate(6deg); }
+  78% { transform: rotate(-3.5deg); }
+  92% { transform: rotate(1.5deg); }
   100% { transform: rotate(0deg); }
 }
 
 @keyframes sway {
-  0%, 100% { transform: rotate(-4deg) translateX(-2px); }
-  50% { transform: rotate(4deg) translateX(2px); }
+  0%, 100% { transform: rotate(-3.5deg); }
+  50% { transform: rotate(3.5deg); }
 }
 
 @keyframes cardWobble {
-  0%, 100% { transform: rotate(2.5deg) skewY(1deg); }
-  50% { transform: rotate(-2.5deg) skewY(-1deg); }
+  0%, 100% { transform: rotate(2deg); }
+  50% { transform: rotate(-2deg); }
 }
 
 @keyframes shine {
-  0% { transform: translateX(-360px) skewX(-22deg); }
-  45%, 100% { transform: translateX(460px) skewX(-22deg); }
+  0% { transform: translateX(-380px) skewX(-20deg); }
+  45%, 100% { transform: translateX(480px) skewX(-20deg); }
 }
 
 @keyframes twinkle {
-  0%, 100% { opacity: 0.1; transform: scale(0.5) rotate(0deg); }
-  50% { opacity: 1; transform: scale(1.2) rotate(180deg); }
-}
-
-@keyframes pulseGlow {
-  0%, 100% { r: 230px; opacity: 0.25; }
-  50% { r: 260px; opacity: 0.45; }
-}
-
-@keyframes floatBadge {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-8px); }
+  0%, 100% { opacity: 0.15; transform: scale(0.6); }
+  50% { opacity: 1; transform: scale(1.2); }
 }
 
 .settle { transform-origin: 210px 6px; animation: settle 3.4s cubic-bezier(.34,1.1,.5,1) forwards; }
-.sway { transform-origin: 210px 6px; animation: sway 4.8s ease-in-out 3.4s infinite; }
-.wob { transform-origin: 210px 300px; animation: cardWobble 4.8s ease-in-out 3.4s infinite; }
-.shine { animation: shine 4.2s ease-in-out 3.6s infinite; }
+.sway { transform-origin: 210px 6px; animation: sway 4.6s ease-in-out 3.4s infinite; }
+.wob { transform-origin: 210px 300px; animation: cardWobble 4.6s ease-in-out 3.4s infinite; }
+.shine { animation: shine 4s ease-in-out 3.6s infinite; }
 .tw { transform-box: fill-box; transform-origin: center; animation: twinkle 3s ease-in-out infinite; }
-.float-icon { animation: floatBadge 3s ease-in-out infinite; }
 
-/* Interactive Hover Effects */
 .lanyard-card-container:hover .wob {
   animation-play-state: paused;
-  transform: scale(1.03) rotate(0deg);
-  transition: transform 0.4s ease;
-}
-.lanyard-card-container:hover .shine {
-  animation-duration: 1.8s;
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
 }
 ]]></style>
 
-<!-- Background Radial Aura (Blue & Lavender) -->
-<radialGradient id="auraglow" cx="50%" cy="65%" r="50%">
-  <stop offset="0%" stop-color="#818cf8" stop-opacity="0.35"/>
-  <stop offset="60%" stop-color="#3b82f6" stop-opacity="0.15"/>
+<!-- Background Glow Aura -->
+<radialGradient id="auraglow" cx="50%" cy="60%" r="50%">
+  <stop offset="0%" stop-color="#6366f1" stop-opacity="0.35"/>
+  <stop offset="70%" stop-color="#3b82f6" stop-opacity="0.1"/>
   <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
 </radialGradient>
 
-<!-- Strap Gradient -->
+<!-- Belt Strap Gradient -->
 <linearGradient id="strapg" x1="0" y1="0" x2="1" y2="0">
-  <stop offset="0%" stop-color="#3b82f6"/>
+  <stop offset="0%" stop-color="#4f46e5"/>
   <stop offset="50%" stop-color="#818cf8"/>
-  <stop offset="100%" stop-color="#6366f1"/>
+  <stop offset="100%" stop-color="#3b82f6"/>
 </linearGradient>
 
-<!-- 3D Glossy Card Background -->
-<linearGradient id="cardbg" x1="0" y1="0" x2="1" y2="1">
-  <stop offset="0%" stop-color="#0f172a"/>
-  <stop offset="40%" stop-color="#1e1b4b"/>
-  <stop offset="100%" stop-color="#090d16"/>
-</linearGradient>
-
-<!-- Animated Glowing Card Border -->
-<linearGradient id="cardborder" x1="0" y1="0" x2="1" y2="1">
-  <stop offset="0%">
-    <animate attributeName="stop-color" values="#818cf8;#3b82f6;#c4b5fd;#818cf8" dur="4s" repeatCount="indefinite"/>
-  </stop>
-  <stop offset="100%">
-    <animate attributeName="stop-color" values="#3b82f6;#c4b5fd;#818cf8;#3b82f6" dur="4s" repeatCount="indefinite"/>
-  </stop>
-</linearGradient>
-
-<!-- Metallic Metallic Clasp & Ring -->
+<!-- Metallic Metal Clasp -->
 <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
   <stop offset="0%" stop-color="#e2e8f0"/>
-  <stop offset="35%" stop-color="#94a3b8"/>
-  <stop offset="65%" stop-color="#475569"/>
+  <stop offset="40%" stop-color="#94a3b8"/>
+  <stop offset="70%" stop-color="#475569"/>
   <stop offset="100%" stop-color="#cbd5e1"/>
 </linearGradient>
 
-<!-- Holographic Shine Sweep -->
+<!-- Holographic Glossy Sweep -->
 <linearGradient id="shineg" x1="0" y1="0" x2="1" y2="0">
   <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
-  <stop offset="45%" stop-color="#ffffff" stop-opacity="0.25"/>
-  <stop offset="55%" stop-color="#c4b5fd" stop-opacity="0.3"/>
+  <stop offset="45%" stop-color="#ffffff" stop-opacity="0.22"/>
+  <stop offset="55%" stop-color="#c4b5fd" stop-opacity="0.28"/>
   <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
 </linearGradient>
 
-<!-- Name Text Gradient -->
-<linearGradient id="nameg" x1="0" y1="0" x2="1" y2="0">
-  <stop offset="0%">
-    <animate attributeName="stop-color" values="#ffffff;#c4b5fd;#818cf8;#ffffff" dur="5s" repeatCount="indefinite"/>
-  </stop>
-  <stop offset="100%">
-    <animate attributeName="stop-color" values="#818cf8;#3b82f6;#c4b5fd;#818cf8" dur="5s" repeatCount="indefinite"/>
-  </stop>
-</linearGradient>
-
-<!-- Glow Filters -->
-<filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
-  <feGaussianBlur stdDeviation="3" result="blur"/>
-  <feMerge>
-    <feMergeNode in="blur"/>
-    <feMergeNode in="SourceGraphic"/>
-  </feMerge>
+<!-- Drop Shadows -->
+<filter id="cardShadow" x="-20%" y="-10%" width="140%" height="130%">
+  <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#030712" flood-opacity="0.8"/>
+  <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#6366f1" flood-opacity="0.3"/>
 </filter>
 
-<filter id="cardShadow" x="-30%" y="-20%" width="160%" height="150%">
-  <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#030712" flood-opacity="0.85"/>
-  <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#818cf8" flood-opacity="0.25"/>
+<filter id="photoGlow">
+  <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#4f46e5" flood-opacity="0.5"/>
 </filter>
 
+<!-- Card Geometry Clip -->
 <clipPath id="cardclip">
-  <rect x="75" y="295" width="270" height="340" rx="22"/>
+  <rect x="70" y="250" width="280" height="420" rx="22"/>
 </clipPath>
+
+<!-- Circular Photo Clip -->
 <clipPath id="avatarClip">
-  <circle cx="210" cy="410" r="54"/>
+  <circle cx="210" cy="375" r="46"/>
 </clipPath>
 </defs>
 
-<!-- Glowing Background Aura -->
-<circle cx="210" cy="440" r="240" fill="url(#auraglow)">
-  <animate attributeName="r" values="220;250;220" dur="4.5s" repeatCount="indefinite"/>
-</circle>
+<!-- Ambient Glow -->
+<circle cx="210" cy="440" r="230" fill="url(#auraglow)"/>
 
-<!-- Twinkling Neon Stars -->
-<g class="tw" style="animation-delay: 0.2s"><path d="M50 180 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 z" fill="#818cf8"/></g>
-<g class="tw" style="animation-delay: 1.4s"><path d="M375 280 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z" fill="#c4b5fd"/></g>
-<g class="tw" style="animation-delay: 2.6s"><path d="M45 490 l3.5 9 9 3.5 -9 3.5 -3.5 9 -3.5 -9 -9 -3.5 9 -3.5 z" fill="#3b82f6"/></g>
-<g class="tw" style="animation-delay: 1.8s"><path d="M370 510 l3 7.5 7.5 3 -7.5 3 -3 7.5 -3 -7.5 -7.5 -3 7.5 -3 z" fill="#818cf8"/></g>
+<!-- Twinkling Ambient Stars -->
+<g class="tw" style="animation-delay: 0.3s"><path d="M45 170 l3.5 9 9 3.5 -9 3.5 -3.5 9 -3.5 -9 -9 -3.5 9 -3.5 z" fill="#818cf8"/></g>
+<g class="tw" style="animation-delay: 1.5s"><path d="M375 260 l3 7.5 7.5 3 -7.5 3 -3 7.5 -3 -7.5 -7.5 -3 7.5 -3 z" fill="#c4b5fd"/></g>
+<g class="tw" style="animation-delay: 2.4s"><path d="M40 500 l3 7.5 7.5 3 -7.5 3 -3 7.5 -3 -7.5 -7.5 -3 7.5 -3 z" fill="#3b82f6"/></g>
 
-<!-- Main Interactive Lanyard Group -->
+<!-- Main Lanyard Container -->
 <g class="lanyard-card-container">
 <g class="settle"><g class="sway">
 
-  <!-- Belt / Strap -->
+  <!-- Lanyard Belt / Strap -->
   <g>
-    <path d="M189 -6 L231 -6 L227 236 L193 236 Z" fill="url(#strapg)"/>
-    <line x1="194.5" y1="0" x2="197.5" y2="234" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1.2" stroke-dasharray="4 3"/>
-    <line x1="225.5" y1="0" x2="222.5" y2="234" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1.2" stroke-dasharray="4 3"/>
+    <path d="M189 -6 L231 -6 L227 205 L193 205 Z" fill="url(#strapg)"/>
+    <line x1="194.5" y1="0" x2="197" y2="204" stroke="#ffffff" stroke-opacity="0.65" stroke-width="1.2" stroke-dasharray="4 3"/>
+    <line x1="225.5" y1="0" x2="223" y2="204" stroke="#ffffff" stroke-opacity="0.65" stroke-width="1.2" stroke-dasharray="4 3"/>
     
     <!-- Text ONLY ON BELT: AI ORCHESTRATOR -->
-    <text x="0" y="0" font-family="'Outfit', 'Space Grotesk', sans-serif" font-size="11" font-weight="900" fill="#ffffff" opacity="0.95" letter-spacing="3" transform="translate(215, 20) rotate(90)">
+    <text x="0" y="0" font-family="'Outfit', sans-serif" font-size="11" font-weight="900" fill="#ffffff" letter-spacing="3" transform="translate(215, 18) rotate(90)">
       AI ORCHESTRATOR  ✦  AI ORCHESTRATOR  ✦  AI ORCHESTRATOR
     </text>
   </g>
 
-  <!-- Metallic Clasp + Ring -->
-  <rect x="186" y="232" width="48" height="26" rx="6" fill="url(#metal)" stroke="#334155" stroke-width="1"/>
-  <rect x="197" y="238" width="26" height="8" rx="4" fill="#1e293b"/>
-  <circle cx="210" cy="272" r="15" fill="none" stroke="url(#metal)" stroke-width="5.5"/>
+  <!-- Metal Clasp & Ring -->
+  <rect x="186" y="202" width="48" height="24" rx="5" fill="url(#metal)" stroke="#334155" stroke-width="1"/>
+  <rect x="197" y="207" width="26" height="7" rx="3.5" fill="#1e293b"/>
+  <circle cx="210" cy="235" r="14" fill="none" stroke="url(#metal)" stroke-width="5"/>
 
-  <!-- Floating 3D Card Group -->
+  <!-- Card Base + Wobble Group -->
   <g class="wob">
-    <!-- Card Base Rect -->
-    <rect x="75" y="295" width="270" height="340" rx="22" fill="url(#cardbg)" stroke="url(#cardborder)" stroke-width="2.5" filter="url(#cardShadow)"/>
-    
-    <!-- Lanyard Clip Slot -->
-    <rect x="178" y="306" width="64" height="10" rx="5" fill="#090d16" stroke="#3b82f6" stroke-opacity="0.5" stroke-width="1"/>
+    <!-- Card Background Shadow & Outer Border -->
+    <rect x="70" y="250" width="280" height="420" rx="22" fill="#111827" stroke="#6366f1" stroke-width="1.5" filter="url(#cardShadow)"/>
 
-    <!-- Clipped Card Content -->
+    <!-- Clipped Card Content (Matching "ROSE ANGEL" Layout) -->
     <g clip-path="url(#cardclip)">
       
-      <!-- Top Header Band -->
-      <rect x="75" y="295" width="270" height="52" fill="#1e1b4b" opacity="0.85"/>
-      <line x1="75" y1="347" x2="345" y2="347" stroke="url(#cardborder)" stroke-width="1"/>
+      <!-- 1. Top Section: White Angled Header -->
+      <path d="M 70 250 L 350 250 L 350 310 L 70 365 Z" fill="#ffffff"/>
 
-      <!-- LEFT SIDE: IIM Sambalpur Written / Logo -->
-      <g transform="translate(90, 310)">
-        <rect x="0" y="0" width="82" height="26" rx="5" fill="#0f172a" stroke="#818cf8" stroke-width="0.8"/>
-        <text x="41" y="12" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="8.5" font-weight="900" fill="#818cf8" letter-spacing="1">IIM</text>
-        <text x="41" y="21" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="6" font-weight="700" fill="#c4b5fd" letter-spacing="0.5">SAMBALPUR</text>
+      <!-- Lanyard Punch Hole at Top Center -->
+      <circle cx="210" cy="268" r="10" fill="#111827"/>
+
+      <!-- Top Left Logo: IIM SAMBALPUR -->
+      <g transform="translate(85, 274)">
+        <!-- Styled IIM Emblem -->
+        <circle cx="12" cy="12" r="10" fill="#4f46e5"/>
+        <text x="12" y="15" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="7" font-weight="900" fill="#ffffff">IIM</text>
+        <text x="26" y="11" font-family="'Outfit', sans-serif" font-size="7.5" font-weight="900" fill="#1e1b4b" letter-spacing="0.5">IIM SAMBALPUR</text>
+        <text x="26" y="18" font-family="'Space Grotesk', sans-serif" font-size="5" font-weight="700" fill="#6366f1" letter-spacing="0.5">AUTONOMOUS INST.</text>
       </g>
 
-      <!-- RIGHT SIDE: MIT Logo / Written -->
-      <g transform="translate(248, 310)">
-        <rect x="0" y="0" width="82" height="26" rx="5" fill="#0f172a" stroke="#3b82f6" stroke-width="0.8"/>
-        <text x="41" y="12" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="8.5" font-weight="900" fill="#3b82f6" letter-spacing="1">MIT</text>
-        <text x="41" y="21" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="6" font-weight="700" fill="#93c5fd" letter-spacing="0.5">INSTITUTE</text>
+      <!-- Top Right Logo: MIT -->
+      <g transform="translate(295, 274)">
+        <circle cx="12" cy="12" r="10" fill="#2563eb"/>
+        <text x="12" y="15" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="7" font-weight="900" fill="#ffffff">MIT</text>
       </g>
 
-      <!-- Cool Boy Avatar in Circular Format -->
-      <!-- Avatar Outer Glowing Ring -->
-      <circle cx="210" cy="410" r="58" fill="none" stroke="url(#cardborder)" stroke-width="3" filter="url(#neonGlow)"/>
-      <circle cx="210" cy="410" r="54" fill="#0f172a"/>
-
-      <!-- Vector Cool Teen Boy Avatar -->
-      <g clip-path="url(#avatarClip)">
-        <!-- Background Gradient inside avatar -->
-        <circle cx="210" cy="410" r="54" fill="url(#cardbg)"/>
-        
-        <!-- Hoodie Body -->
-        <path d="M155 465 C155 435, 175 422, 210 422 C245 422, 265 435, 265 465 Z" fill="#3b82f6"/>
-        <!-- Hoodie Collar & Strings -->
-        <path d="M185 430 Q210 450 235 430" fill="none" stroke="#1e1b4b" stroke-width="4"/>
-        <line x1="200" y1="438" x2="198" y2="455" stroke="#818cf8" stroke-width="2"/>
-        <line x1="220" y1="438" x2="222" y2="455" stroke="#818cf8" stroke-width="2"/>
-
-        <!-- Neck -->
-        <rect x="201" y="405" width="18" height="22" fill="#fdba74" rx="3"/>
-
-        <!-- Head Face -->
-        <ellipse cx="210" cy="396" rx="20" ry="22" fill="#fed7aa"/>
-
-        <!-- Cool Glasses / Shades -->
-        <rect x="194" y="390" width="14" height="10" rx="3" fill="#0f172a" stroke="#818cf8" stroke-width="1.5"/>
-        <rect x="212" y="390" width="14" height="10" rx="3" fill="#0f172a" stroke="#818cf8" stroke-width="1.5"/>
-        <line x1="208" y1="394" x2="212" y2="394" stroke="#818cf8" stroke-width="1.5"/>
-        <!-- Lens Glare -->
-        <line x1="196" y1="392" x2="202" y2="398" stroke="#ffffff" stroke-width="1" opacity="0.7"/>
-        <line x1="214" y1="392" x2="220" y2="398" stroke="#ffffff" stroke-width="1" opacity="0.7"/>
-
-        <!-- Smile -->
-        <path d="M204 407 Q210 412 216 407" fill="none" stroke="#ea580c" stroke-width="1.5" stroke-linecap="round"/>
-
-        <!-- Cool Stylish Hair (Trendy Anime/Teen Boy Haircut) -->
-        <path d="M188 395 C185 375, 200 368, 210 368 C225 368, 235 376, 232 395 C226 380, 218 375, 210 376 C200 376, 194 382, 188 395 Z" fill="#1e1b4b"/>
-        <!-- Hair Spikes in Front -->
-        <path d="M190 384 Q198 374 205 385 Q212 372 222 384 Q228 376 233 388" fill="#312e81"/>
-      </g>
-
-      <!-- Glossy Avatar Overlay Edge -->
-      <circle cx="210" cy="410" r="54" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.3"/>
-
-      <!-- NAME: ANIKET DAS -->
-      <text x="210" y="495" text-anchor="middle" font-family="'Outfit', 'Space Grotesk', sans-serif" font-size="22" font-weight="900" fill="url(#nameg)" letter-spacing="2" filter="url(#neonGlow)">
-        ANIKET DAS
-      </text>
-
-      <!-- SUBTITLE / TITLE -->
-      <text x="210" y="516" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#818cf8" letter-spacing="3.5">
-        AI ORCHESTRATOR
-      </text>
-
-      <line x1="110" y1="530" x2="310" y2="530" stroke="url(#cardborder)" stroke-width="1" stroke-opacity="0.4"/>
-
-      <!-- Institutional Sub-Details -->
-      <text x="210" y="547" text-anchor="middle" font-size="9" font-weight="600" fill="#94a3b8" letter-spacing="1.5">
-        BS + DS  ·  IIM SAMBALPUR
-      </text>
-      <text x="210" y="561" text-anchor="middle" font-size="8.5" font-weight="500" fill="#64748b" letter-spacing="1.5">
-        IIT MADRAS  ·  BATCH 2029
-      </text>
-
-      <!-- Tech Badges Barcode Section -->
-      <g transform="translate(100, 574)">
-        <!-- Barcode lines -->
-        <rect x="0" y="0" width="2" height="24" fill="#c4b5fd" opacity="0.8"/>
-        <rect x="4" y="0" width="1.5" height="24" fill="#c4b5fd" opacity="0.8"/>
-        <rect x="8" y="0" width="3" height="24" fill="#c4b5fd" opacity="0.8"/>
-        <rect x="13" y="0" width="1" height="24" fill="#c4b5fd" opacity="0.8"/>
-        <rect x="16" y="0" width="4" height="24" fill="#c4b5fd" opacity="0.8"/>
-        <rect x="22" y="0" width="1.5" height="24" fill="#c4b5fd" opacity="0.8"/>
-        <rect x="25" y="0" width="3" height="24" fill="#c4b5fd" opacity="0.8"/>
-        <rect x="30" y="0" width="1" height="24" fill="#c4b5fd" opacity="0.8"/>
-        <rect x="33" y="0" width="4" height="24" fill="#c4b5fd" opacity="0.8"/>
-        <rect x="39" y="0" width="2" height="24" fill="#c4b5fd" opacity="0.8"/>
-        <rect x="43" y="0" width="1.5" height="24" fill="#c4b5fd" opacity="0.8"/>
-        <rect x="47" y="0" width="3" height="24" fill="#c4b5fd" opacity="0.8"/>
-        <rect x="52" y="0" width="1" height="24" fill="#c4b5fd" opacity="0.8"/>
-        <rect x="55" y="0" width="4" height="24" fill="#c4b5fd" opacity="0.8"/>
-        <rect x="61" y="0" width="2" height="24" fill="#c4b5fd" opacity="0.8"/>
-        <rect x="65" y="0" width="1" height="24" fill="#c4b5fd" opacity="0.8"/>
-        <rect x="68" y="0" width="3" height="24" fill="#c4b5fd" opacity="0.8"/>
-        <rect x="73" y="0" width="1.5" height="24" fill="#c4b5fd" opacity="0.8"/>
-        <rect x="76" y="0" width="4" height="24" fill="#c4b5fd" opacity="0.8"/>
-      </g>
-
-      <text x="320" y="586" text-anchor="end" font-size="8.5" font-weight="700" fill="#3b82f6" letter-spacing="1">PYTHON · AI/ML</text>
-      <text x="320" y="598" text-anchor="end" font-size="8.5" font-weight="700" fill="#818cf8" letter-spacing="1">REACT · THREE.JS</text>
-
-      <!-- 3D Glass Glossy Reflection Sweep -->
-      <rect class="shine" x="75" y="280" width="130" height="370" fill="url(#shineg)"/>
+      <!-- 2. Middle Section: Diagonal Purple & Lavender Bands -->
+      <!-- Band 1: Deep Indigo Accent -->
+      <path d="M 70 345 L 350 285 L 350 330 L 70 390 Z" fill="#312e81"/>
       
-      <!-- Top Right Glass Curved Reflection -->
-      <path d="M 230 295 L 345 295 L 345 410 Q 280 340 230 295 Z" fill="#ffffff" fill-opacity="0.04"/>
+      <!-- Band 2: Vivid Purple / Lavender Main Layer -->
+      <path d="M 70 365 L 350 305 L 350 440 L 70 515 Z" fill="#581c87"/>
+      <path d="M 70 365 L 350 305 L 350 440 L 70 515 Z" fill="url(#strapg)" opacity="0.85"/>
+      
+      <!-- Band 3: Dark Charcoal Transition Bar -->
+      <path d="M 70 500 L 350 425 L 350 455 L 70 530 Z" fill="#1f2937"/>
+
+      <!-- 3. Lower Section: Dark Body Background -->
+      <rect x="70" y="445" width="280" height="225" fill="#111827"/>
+      <!-- Angled Top Edge for Dark Section -->
+      <path d="M 70 515 L 350 440 L 350 670 L 70 670 Z" fill="#111827"/>
+
+      <!-- 4. Center Double-Ringed Circular Photo (Positioned over the diagonal bands) -->
+      <!-- Outer Glossy Purple/Lavender Ring -->
+      <circle cx="210" cy="375" r="58" fill="#6b21a8" opacity="0.6" filter="url(#photoGlow)"/>
+      <circle cx="210" cy="375" r="56" fill="none" stroke="#a855f7" stroke-width="4"/>
+      <circle cx="210" cy="375" r="52" fill="none" stroke="#c084fc" stroke-width="2"/>
+      
+      <!-- Inner Dark Border Ring -->
+      <circle cx="210" cy="375" r="47" fill="#0f172a" stroke="#1e1b4b" stroke-width="2"/>
+
+      <!-- Teenager Male Portrait Photo -->
+      <g clip-path="url(#avatarClip)">
+        <image href="./avatar.png" x="160" y="325" width="100" height="100" preserveAspectRatio="xMidYMid slice"/>
+      </g>
+
+      <!-- 5. Name Section (Matching ROSE ANGEL typography styling) -->
+      <!-- First Name "ANIKET" in bold White, Last Name "DAS" in bold Lavender -->
+      <text x="210" y="525" text-anchor="middle">
+        <tspan font-family="'Outfit', sans-serif" font-size="21" font-weight="900" fill="#ffffff" letter-spacing="1.5">ANIKET </tspan>
+        <tspan font-family="'Outfit', sans-serif" font-size="21" font-weight="900" fill="#c084fc" letter-spacing="1.5">DAS</tspan>
+      </text>
+
+      <!-- 6. Role Pill Badge (Matching the purple pill button in reference image) -->
+      <g transform="translate(140, 535)">
+        <rect x="0" y="0" width="140" height="22" rx="11" fill="#4c1d95" stroke="#a855f7" stroke-width="1"/>
+        <text x="70" y="15" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" fill="#ffffff" letter-spacing="1">AI Orchestrator</text>
+      </g>
+
+      <!-- 7. Align Details List (Matching reference structure) -->
+      <g transform="translate(100, 578)" font-family="'Fira Code', monospace" font-size="9" font-weight="500">
+        <!-- Line 1: ID -->
+        <text x="0" y="0" fill="#9ca3af">ID</text>
+        <text x="45" y="0" fill="#e5e7eb">: 2026-IIMS-BSDS</text>
+
+        <!-- Line 2: Phone / Org -->
+        <text x="0" y="14" fill="#9ca3af">Org</text>
+        <text x="45" y="14" fill="#e5e7eb">: IIM Sambalpur / IIT Madras</text>
+
+        <!-- Line 3: Email -->
+        <text x="0" y="28" fill="#9ca3af">Email</text>
+        <text x="45" y="28" fill="#c084fc">bsdsai25aniketd@iimsambalpur.ac.in</text>
+      </g>
+
+      <!-- 8. White Barcode Container Box -->
+      <g transform="translate(160, 616)">
+        <rect x="0" y="0" width="100" height="20" rx="3" fill="#ffffff"/>
+        <!-- Barcode lines inside -->
+        <g fill="#000000" transform="translate(8, 2)">
+          <rect x="0" y="0" width="2" height="12"/><rect x="3" y="0" width="1" height="12"/>
+          <rect x="6" y="0" width="3" height="12"/><rect x="11" y="0" width="1" height="12"/>
+          <rect x="14" y="0" width="2" height="12"/><rect x="18" y="0" width="1" height="12"/>
+          <rect x="21" y="0" width="4" height="12"/><rect x="27" y="0" width="1" height="12"/>
+          <rect x="30" y="0" width="2" height="12"/><rect x="34" y="0" width="3" height="12"/>
+          <rect x="39" y="0" width="1" height="12"/><rect x="42" y="0" width="2" height="12"/>
+          <rect x="46" y="0" width="1" height="12"/><rect x="49" y="0" width="3" height="12"/>
+          <rect x="54" y="0" width="2" height="12"/><rect x="58" y="0" width="1" height="12"/>
+          <rect x="61" y="0" width="3" height="12"/><rect x="66" y="0" width="1" height="12"/>
+          <rect x="69" y="0" width="2" height="12"/><rect x="73" y="0" width="3" height="12"/>
+          <rect x="78" y="0" width="1" height="12"/><rect x="81" y="0" width="2" height="12"/>
+        </g>
+        <text x="50" y="18" text-anchor="middle" font-family="'Fira Code', monospace" font-size="5" font-weight="700" fill="#000000">PZN - 8908802</text>
+      </g>
+
+      <!-- 9. Footer URL in Bracket (Matching [ www.graphicsfamily.com ] in reference) -->
+      <g transform="translate(130, 650)">
+        <text x="75" y="0" text-anchor="middle" font-family="'Fira Code', monospace" font-size="7" font-weight="600" fill="#9ca3af">
+          [ www.github.com/Aniket-Das-2006 ]
+        </text>
+      </g>
+
+      <!-- 10. Bottom Right Purple Corner Slice -->
+      <path d="M 350 645 L 350 670 L 310 670 Z" fill="#a855f7"/>
+
+      <!-- 11. Holographic 3D Glass Glossy Reflection Sweep -->
+      <rect class="shine" x="70" y="240" width="130" height="440" fill="url(#shineg)"/>
 
     </g>
   </g>
@@ -308,8 +257,8 @@ text { font-family: 'Space Grotesk', 'Fira Code', -apple-system, sans-serif; }
 </g>
 
 <!-- Bottom Interactive Hint -->
-<text x="210" y="652" text-anchor="middle" font-size="10" font-weight="600" fill="#818cf8" opacity="0.85" letter-spacing="1">
-  ✦  Hover to inspect ID Card  ✦
+<text x="210" y="674" text-anchor="middle" font-size="9" font-weight="600" fill="#818cf8" opacity="0.8" letter-spacing="1">
+  ✦  Hover to inspect Executive ID Card  ✦
 </text>
 
 </svg>
