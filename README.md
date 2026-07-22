@@ -29,7 +29,7 @@
 <td width="40%" align="center" valign="middle">
 
 <!-- 🪪 Swinging Lanyard ID Card (3D Glossy, Blue & Lavender, Interactive) -->
-<img src="./profile-lanyard.svg?v=3" alt="Aniket Das ID Badge" width="360"/>
+<img src="./profile-lanyard.svg?v=20260723_v4" alt="Aniket Das ID Badge" width="360"/>
 
 </td>
 <td width="60%" valign="middle">
