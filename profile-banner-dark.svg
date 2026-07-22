@@ -2,7 +2,7 @@
 <title>Developer — Portfolio Banner</title>
 <defs>
 <style type="text/css"><![CDATA[
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&family=Fira+Code:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&amp;family=Fira+Code:wght@400;700&amp;display=swap');
 text{font-family:'Fira Code','SFMono-Regular',Consolas,monospace}
 .name-text{font-family:'Outfit',-apple-system,sans-serif}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
