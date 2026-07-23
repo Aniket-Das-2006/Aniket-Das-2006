@@ -56,7 +56,7 @@ text{font-family:'Fira Code','SFMono-Regular',Consolas,monospace}
     <path d="M191 -6 L229 -6 L226 236 L194 236 Z" fill="url(#strapg)"/>
     <line x1="196" y1="0" x2="198.5" y2="234" stroke="#fff" stroke-opacity=".55" stroke-width="1" stroke-dasharray="4 3"/>
     <line x1="224" y1="0" x2="221.5" y2="234" stroke="#fff" stroke-opacity=".55" stroke-width="1" stroke-dasharray="4 3"/>
-    <text x="0" y="0" font-size="10.5" font-weight="bold" fill="#fff" opacity=".92" letter-spacing="2" transform="translate(214,18) rotate(90)" class="strap-text">DEVELOPER ♥ CREATOR ♥ DESIGNER</text>
+    <text x="0" y="0" font-size="10.5" font-weight="bold" fill="#fff" opacity=".92" letter-spacing="2" transform="translate(214,18) rotate(90)" class="strap-text">AI ORCHESTRATOR • DATA SCIENTIST</text>
   </g>
 
   <!-- Clasp + ring -->
@@ -81,16 +81,16 @@ text{font-family:'Fira Code','SFMono-Regular',Consolas,monospace}
       <image x="154" y="356" width="112" height="112" href="{AVATAR_BASE64}"/>
 
       <!-- name & details -->
-      <text x="210" y="500" text-anchor="middle" font-size="16" fill="#e2e8f0" font-weight="bold" letter-spacing="1">YOUR NAME</text>
-      <text x="210" y="522" text-anchor="middle" font-size="10.5" fill="#3b82f6" font-weight="bold">FULL STACK DEVELOPER</text>
+      <text x="210" y="500" text-anchor="middle" font-size="16" fill="#e2e8f0" font-weight="bold" letter-spacing="1">ANIKET DAS</text>
+      <text x="210" y="522" text-anchor="middle" font-size="10.5" fill="#3b82f6" font-weight="bold">AI ORCHESTRATOR</text>
 
       <line x1="102" y1="540" x2="318" y2="540" stroke="#1e293b" stroke-width="1"/>
 
       <!-- bio line -->
-      <text x="210" y="562" text-anchor="middle" font-size="8.5" fill="#94a3b8">"Building modern digital realities."</text>
+      <text x="210" y="562" text-anchor="middle" font-size="8.5" fill="#94a3b8">"I don't just write code, I orchestrate digital realities."</text>
 
       <rect x="120" y="582" width="180" height="24" rx="12" fill="#020617" stroke="#1e293b" stroke-width="1"/>
-      <text x="210" y="598" text-anchor="middle" font-size="10.5" fill="#818cf8" font-weight="bold">ACTIVE MEMB</text>
+      <text x="210" y="598" text-anchor="middle" font-size="10.5" fill="#818cf8" font-weight="bold">ACTIVE MEMBER</text>
 
       <!-- gloss reflection -->
       <path d="M-100 298 L160 298 L100 628 L-160 628 Z" fill="url(#shineg)" class="shine"/>
