@@ -18,8 +18,8 @@ jobs:
         with:
           github_user_name: Aniket-Das-2006
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#818cf8&color_dots=#3b82f6,#6366f1,#818cf8,#a5b4fc,#c4b5fd
+            dist/github-contribution-grid-snake.svg?palette=github-light&color_snake=#6366f1&color_dots=#ebedf0,#9be9a8,#40c463,#30a14e,#216e39
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#c084fc&color_dots=#161b22,#0e4429,#006d32,#26a641,#39d353
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
