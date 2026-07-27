@@ -23,36 +23,16 @@ def main():
     current_dir = os.path.dirname(os.path.abspath(__file__))
     
     # Image source files
-    illustration_src = os.path.join(current_dir, "illustration.png")
-    avatar_src = os.path.join(current_dir, "avatar.png")
+    illustration_src = os.path.join(current_dir, "raw-images", "illustration.png")
+    avatar_src = os.path.join(current_dir, "raw-images", "avatar.png")
     
-    # Sync custom profile badge if available
-    downloads_badge = r"D:\Downloads\PROFILE BADGE.png"
-    if os.path.exists(downloads_badge):
-        import shutil
-        print(f"Updating avatar.png from {downloads_badge}...")
-        try:
-            shutil.copy2(downloads_badge, avatar_src)
-        except Exception as e:
-            print(f"Warning: Could not copy custom badge: {e}")
-            
     if not os.path.exists(illustration_src) or not os.path.exists(avatar_src):
-        print("Error: Required raw images (illustration.png or avatar.png) not found in the workspace.")
+        print("Error: Generated images not found at the expected paths.")
         sys.exit(1)
         
     print("Encoding images to base64...")
     illustration_base64 = get_base64_image(illustration_src)
     avatar_base64 = get_base64_image(avatar_src)
-    
-    # Detect the image MIME type of the avatar to ensure correct rendering in SVGs
-    with open(avatar_src, "rb") as f:
-        header = f.read(4)
-    avatar_mime = "image/png"
-    if header.startswith(b"\xff\xd8"):
-        avatar_mime = "image/jpeg"
-    elif header.startswith(b"RIFF") and header[8:12] == b"WEBP":
-        avatar_mime = "image/webp"
-    print(f"Detected avatar MIME type: {avatar_mime}")
     
     # 1. Dark Banner
     dark_template = os.path.join(current_dir, "banner-dark.template.svg")
@@ -75,10 +55,10 @@ def main():
     lanyard_output = os.path.join(current_dir, "profile-lanyard.svg")
     if os.path.exists(lanyard_template):
         build_svg(lanyard_template, lanyard_output, {
-            "{AVATAR_BASE64}": f"data:{avatar_mime};base64,{avatar_base64}"
+            "{AVATAR_BASE64}": f"data:image/png;base64,{avatar_base64}"
         })
         
-    print("Build complete successfully!")
+    print("Build complete!")
 
 if __name__ == "__main__":
     main()

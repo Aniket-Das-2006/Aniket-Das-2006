@@ -89,22 +89,22 @@ text{font-family:'Fira Code','SFMono-Regular',Consolas,monospace}
 
 <!-- ================= LEFT: CONTENT ================= -->
 <!-- Terminal prompt -->
-<text clip-path="url(#cPrompt)" x="48" y="69" font-size="14"><tspan fill="#60a5fa" font-weight="bold">aniket@orchestrator</tspan><tspan fill="#64748b">:~$ </tspan><tspan fill="#cbd5e1">cat </tspan><tspan fill="#a78bfa">intro.md</tspan></text>
+<text clip-path="url(#cPrompt)" x="48" y="69" font-size="14"><tspan fill="#60a5fa" font-weight="bold">alex@developer</tspan><tspan fill="#64748b">:~$ </tspan><tspan fill="#cbd5e1">cat </tspan><tspan fill="#a78bfa">README.md</tspan></text>
 <rect x="454" y="56" width="8" height="16" fill="#60a5fa" opacity="0"><animate attributeName="opacity" values="1;0" dur="1s" repeatCount="indefinite" begin="1.35s"/></rect>
 
 <!-- Hi, I'm -->
 <text clip-path="url(#cHi)" x="48" y="114" font-size="24" font-weight="bold" fill="#e2e8f0">Hi, I'm 👋</text>
 
 <!-- Name (Editable text element) -->
-<text class="ltr name-text" x="48" y="196" font-size="54" font-weight="900" fill="url(#nameg)" filter="url(#glow)" style="animation-delay:1.60s">ANIKET DAS</text>
+<text class="ltr name-text" x="48" y="196" font-size="54" font-weight="900" fill="url(#nameg)" filter="url(#glow)" style="animation-delay:1.60s">YOUR NAME</text>
 
 <g class="hb" style="animation-delay:3s"><path d="M410 168 c-5-11-21-9-21 4 0 9 12 16 21 22 9-6 21-13 21-22 0-13-16-15-21-4z" fill="#818cf8" opacity=".95"/></g>
 
 <!-- Cycling roles -->
-<text clip-path="url(#r1)" x="48" y="241" font-size="17" fill="#818cf8" filter="url(#glow)">&lt; AI Orchestrator /&gt;</text>
-<text clip-path="url(#r2)" x="48" y="241" font-size="17" fill="#818cf8" filter="url(#glow)">&lt; Data Scientist /&gt;</text>
-<text clip-path="url(#r3)" x="48" y="241" font-size="17" fill="#818cf8" filter="url(#glow)">&lt; Agentic AI Developer /&gt;</text>
-<text clip-path="url(#r4)" x="48" y="241" font-size="17" fill="#818cf8" filter="url(#glow)">&lt; RAG Pipeline Engineer /&gt;</text>
+<text clip-path="url(#r1)" x="48" y="241" font-size="17" fill="#818cf8" filter="url(#glow)">&lt; Full Stack Developer /&gt;</text>
+<text clip-path="url(#r2)" x="48" y="241" font-size="17" fill="#818cf8" filter="url(#glow)">&lt; UI/UX Architect /&gt;</text>
+<text clip-path="url(#r3)" x="48" y="241" font-size="17" fill="#818cf8" filter="url(#glow)">&lt; Creative Coder /&gt;</text>
+<text clip-path="url(#r4)" x="48" y="241" font-size="17" fill="#818cf8" filter="url(#glow)">&lt; Open Source Contributor /&gt;</text>
 <rect x="48" y="228" width="2.5" height="16" fill="#818cf8" opacity="0"><animate attributeName="opacity" values="1;0" dur=".8s" repeatCount="indefinite" begin="2.9s"/></rect>
 
 <!-- Quote box -->
@@ -112,25 +112,25 @@ text{font-family:'Fira Code','SFMono-Regular',Consolas,monospace}
   <rect x="48" y="262" width="380" height="72" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
   <rect x="48" y="266" width="3.5" height="64" rx="1.5" fill="#3b82f6"/>
 </g>
-<text clip-path="url(#q1)" x="76" y="292" font-size="15" fill="#e2e8f0">I don't just write code,</text>
-<text clip-path="url(#q2)" x="76" y="318" font-size="15"><tspan fill="#e2e8f0">I </tspan><tspan fill="#3b82f6" font-weight="bold">orchestrate</tspan><tspan fill="#e2e8f0"> intelligence.</tspan></text>
+<text clip-path="url(#q1)" x="76" y="292" font-size="15" fill="#e2e8f0">I don't just build webs,</text>
+<text clip-path="url(#q2)" x="76" y="318" font-size="15"><tspan fill="#e2e8f0">I </tspan><tspan fill="#3b82f6" font-weight="bold">code</tspan><tspan fill="#e2e8f0"> experiences.</tspan></text>
 <g class="tw" style="animation-delay:.9s"><path d="M400 288l2.4 6.4 6.4 2.4-6.4 2.4-2.4 6.4-2.4-6.4-6.4-2.4 6.4-2.4z" fill="#818cf8"/></g>
 
 <!-- Tech I Know -->
 <text class="ii" x="48" y="374" font-size="15" fill="#a78bfa" font-weight="bold" style="animation:fadeIn .4s ease 4.6s forwards">🧩 Tech I Know</text>
-<g class="pill" style="animation:fadeIn .3s ease 4.8s forwards"><rect x="48" y="388" width="80" height="26" rx="13" fill="rgba(59,130,246,.13)" stroke="#3b82f6" stroke-width="1"/><text x="88" y="405" text-anchor="middle" font-size="12" fill="#60a5fa" font-weight="bold">Python</text></g>
-<g class="pill" style="animation:fadeIn .3s ease 4.9s forwards"><rect x="138" y="388" width="90" height="26" rx="13" fill="rgba(99,102,241,.15)" stroke="#6366f1" stroke-width="1"/><text x="183" y="405" text-anchor="middle" font-size="12" fill="#818cf8" font-weight="bold">PyTorch</text></g>
-<g class="pill" style="animation:fadeIn .3s ease 5s forwards"><rect x="238" y="388" width="105" height="26" rx="13" fill="rgba(6,182,212,.10)" stroke="#06b6d4" stroke-width="1"/><text x="290.5" y="405" text-anchor="middle" font-size="12" fill="#22d3ee" font-weight="bold">LangChain</text></g>
-<g class="pill" style="animation:fadeIn .3s ease 5.1s forwards"><rect x="353" y="388" width="115" height="26" rx="13" fill="rgba(139,92,246,.10)" stroke="#8b5cf6" stroke-width="1"/><text x="410.5" y="405" text-anchor="middle" font-size="12" fill="#a78bfa" font-weight="bold">Agentic AI</text></g>
-<g class="pill" style="animation:fadeIn .3s ease 5.2s forwards"><rect x="48" y="422" width="80" height="26" rx="13" fill="rgba(37,99,235,.14)" stroke="#2563eb" stroke-width="1"/><text x="88" y="439" text-anchor="middle" font-size="12" fill="#60a5fa" font-weight="bold">Docker</text></g>
-<g class="pill" style="animation:fadeIn .3s ease 5.3s forwards"><rect x="138" y="422" width="60" height="26" rx="13" fill="rgba(124,58,237,.14)" stroke="#7c3aed" stroke-width="1"/><text x="168" y="439" text-anchor="middle" font-size="12" fill="#a78bfa" font-weight="bold">SQL</text></g>
-<g class="pill" style="animation:fadeIn .3s ease 5.4s forwards"><rect x="208" y="422" width="135" height="26" rx="13" fill="rgba(59,130,246,.10)" stroke="#3b82f6" stroke-width="1"/><text x="275.5" y="439" text-anchor="middle" font-size="12" fill="#60a5fa" font-weight="bold">RAG Pipelines</text></g>
+<g class="pill" style="animation:fadeIn .3s ease 4.8s forwards"><rect x="48" y="388" width="76" height="26" rx="13" fill="rgba(59,130,246,.13)" stroke="#3b82f6" stroke-width="1"/><text x="86" y="405" text-anchor="middle" font-size="12" fill="#60a5fa" font-weight="bold">React</text></g>
+<g class="pill" style="animation:fadeIn .3s ease 4.9s forwards"><rect x="132" y="388" width="70" height="26" rx="13" fill="rgba(99,102,241,.15)" stroke="#6366f1" stroke-width="1"/><text x="167" y="405" text-anchor="middle" font-size="12" fill="#818cf8" font-weight="bold">CSS</text></g>
+<g class="pill" style="animation:fadeIn .3s ease 5s forwards"><rect x="210" y="388" width="110" height="26" rx="13" fill="rgba(6,182,212,.10)" stroke="#06b6d4" stroke-width="1"/><text x="265" y="405" text-anchor="middle" font-size="12" fill="#22d3ee" font-weight="bold">TypeScript</text></g>
+<g class="pill" style="animation:fadeIn .3s ease 5.1s forwards"><rect x="328" y="388" width="80" height="26" rx="13" fill="rgba(139,92,246,.10)" stroke="#8b5cf6" stroke-width="1"/><text x="368" y="405" text-anchor="middle" font-size="12" fill="#a78bfa" font-weight="bold">Node.js</text></g>
+<g class="pill" style="animation:fadeIn .3s ease 5.2s forwards"><rect x="48" y="422" width="74" height="26" rx="13" fill="rgba(37,99,235,.14)" stroke="#2563eb" stroke-width="1"/><text x="85" y="439" text-anchor="middle" font-size="12" fill="#60a5fa" font-weight="bold">Docker</text></g>
+<g class="pill" style="animation:fadeIn .3s ease 5.3s forwards"><rect x="130" y="422" width="64" height="26" rx="13" fill="rgba(124,58,237,.14)" stroke="#7c3aed" stroke-width="1"/><text x="162" y="439" text-anchor="middle" font-size="12" fill="#a78bfa" font-weight="bold">SQL</text></g>
+<g class="pill" style="animation:fadeIn .3s ease 5.4s forwards"><rect x="202" y="422" width="130" height="26" rx="13" fill="rgba(59,130,246,.10)" stroke="#3b82f6" stroke-width="1"/><text x="267" y="439" text-anchor="middle" font-size="12" fill="#60a5fa" font-weight="bold">Responsive UI</text></g>
 
 <!-- About Me -->
 <text class="ii" x="48" y="490" font-size="15" fill="#3b82f6" font-weight="bold" style="animation:fadeIn .4s ease 5.6s forwards">👨‍💻 About Me</text>
-<text class="ii" x="48" y="516" font-size="13.5" style="animation:fadeIn .4s ease 5.8s forwards"><tspan fill="#60a5fa">&gt;_ </tspan><tspan fill="#94a3b8">I design and deploy advanced agentic workflows and data systems.</tspan></text>
-<text class="ii" x="48" y="540" font-size="13.5" style="animation:fadeIn .4s ease 6s forwards"><tspan fill="#3b82f6">💡 </tspan><tspan fill="#94a3b8">Specialized in RAG pipelines, LLM fine-tuning, and automation.</tspan></text>
-<text class="ii" x="48" y="564" font-size="13.5" style="animation:fadeIn .4s ease 6.2s forwards"><tspan fill="#818cf8">🚀 </tspan><tspan fill="#94a3b8">Orchestrating AI agents to solve complex real-world problems.</tspan></text>
+<text class="ii" x="48" y="516" font-size="13.5" style="animation:fadeIn .4s ease 5.8s forwards"><tspan fill="#60a5fa">&gt;_ </tspan><tspan fill="#94a3b8">I build responsive, user-friendly and beautiful web experiences.</tspan></text>
+<text class="ii" x="48" y="540" font-size="13.5" style="animation:fadeIn .4s ease 6s forwards"><tspan fill="#3b82f6">💡 </tspan><tspan fill="#94a3b8">Always learning, always building.</tspan></text>
+<text class="ii" x="48" y="564" font-size="13.5" style="animation:fadeIn .4s ease 6.2s forwards"><tspan fill="#818cf8">🚀 </tspan><tspan fill="#94a3b8">Turning ideas into real world solutions.</tspan></text>
 
 <!-- Stats card -->
 <g class="st" style="animation:fadeIn .5s ease 6.4s forwards">
