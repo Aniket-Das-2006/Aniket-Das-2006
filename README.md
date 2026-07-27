@@ -1,6 +1,18 @@
 <div align="center">
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
+<!--  WELCOME BANNER                                                -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h1>WELCOME</h1>
+<img src="./git-banner.gif" alt="Welcome Banner" width="100%"/>
+
+</div>
+
+<br/>
+
+<div align="center">
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
 <!--  INTRO WIDGET: Night Sky, Shooting Stars & Walking Cat        -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <img src="https://raw.githubusercontent.com/Aniket-Das-2006/Aniket-Das-2006/main/profile-intro.svg?v=20260723_v17" alt="Aniket Das — Welcome" width="100%"/>
