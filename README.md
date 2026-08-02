@@ -45,7 +45,7 @@
 <img src="https://raw.githubusercontent.com/Aniket-Das-2006/Aniket-Das-2006/main/profile-lanyard.svg?v=20260723_v17" alt="Aniket Das ID Badge" width="310"/>
 </td>
 <td width="60%" valign="top">
-<h3 style="color: #ffffff; font-family: sans-serif; margin-top: 0;">🚀 Selected Work &amp; Endeavors</h3>
+<h3 style="color: #ffffff; font-family: sans-serif; margin-top: 0;">My Latest Reposetories</h3>
 <table width="100%" border="0" cellpadding="6" style="color: #e2e8f0; font-family: sans-serif; font-size: 13px;">
 <tr bgcolor="#1e1b4b" style="font-weight: bold; color: #ffffff;">
 <td>🎯 Project</td>
@@ -53,29 +53,24 @@
 <td>⚡ Focus</td>
 </tr>
 <tr bgcolor="#0f172a">
-<td><a href="https://github.com/Aniket-Das-2006" style="color: #818cf8; text-decoration: none; font-weight: bold;">UNICEF Data Cleaning</a></td>
-<td align="center"><code style="color: #60a5fa; background: #1e293b; padding: 2px 6px; border-radius: 4px;">Python</code></td>
-<td>10,000+ node pipeline</td>
+<td><a href="https://github.com/Aniket-Das-2006/PERSONAE" style="color: #818cf8; text-decoration: none; font-weight: bold;">PERSONAE</a></td>
+<td align="center"><code style="color: #60a5fa; background: #1e293b; padding: 2px 6px; border-radius: 4px;">TypeScript</code></td>
+<td>Digital persona configuration &amp; tools</td>
 </tr>
 <tr bgcolor="#07040d">
-<td><a href="https://github.com/Aniket-Das-2006" style="color: #818cf8; text-decoration: none; font-weight: bold;">FitTrack AI Web App</a></td>
-<td align="center"><code style="color: #60a5fa; background: #1e293b; padding: 2px 6px; border-radius: 4px;">React</code></td>
-<td>Wellness dashboard</td>
+<td><a href="https://github.com/Aniket-Das-2006/Aniket-Das-2006" style="color: #818cf8; text-decoration: none; font-weight: bold;">Aniket-Das-2006</a></td>
+<td align="center"><code style="color: #60a5fa; background: #1e293b; padding: 2px 6px; border-radius: 4px;">JavaScript</code></td>
+<td>Personal portfolio &amp; automated profile</td>
 </tr>
 <tr bgcolor="#0f172a">
-<td><a href="https://github.com/Aniket-Das-2006" style="color: #818cf8; text-decoration: none; font-weight: bold;">Parallax WebGL Canvas</a></td>
-<td align="center"><code style="color: #60a5fa; background: #1e293b; padding: 2px 6px; border-radius: 4px;">Three.js</code></td>
-<td>Interactive 3D visuals</td>
+<td>&nbsp;</td>
+<td align="center">&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 <tr bgcolor="#07040d">
-<td><a href="https://github.com/Aniket-Das-2006" style="color: #818cf8; text-decoration: none; font-weight: bold;">Macro-Economic Study</a></td>
-<td align="center"><code style="color: #60a5fa; background: #1e293b; padding: 2px 6px; border-radius: 4px;">Tableau</code></td>
-<td>Monetary analysis</td>
-</tr>
-<tr bgcolor="#0f172a">
-<td><a href="https://github.com/Aniket-Das-2006" style="color: #818cf8; text-decoration: none; font-weight: bold;">Zomato Geo-Distribution</a></td>
-<td align="center"><code style="color: #60a5fa; background: #1e293b; padding: 2px 6px; border-radius: 4px;">Tableau</code></td>
-<td>Spatial analysis</td>
+<td>&nbsp;</td>
+<td align="center">&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 </table>
 <p style="color: #c4b5fd; font-family: monospace; border-left: 3px solid #818cf8; padding-left: 10px; margin: 15px 0 0 0;">💜 <i>"I don't just write code, I orchestrate digital realities."</i></p>
