@@ -106,12 +106,12 @@
 </tr>
 </table>
 <br/>
-<img src="https://github-readme-stats-sigma-five.vercel.app/api?username=Aniket-Das-2006&show_icons=true&bg_color=0d1117&title_color=818cf8&text_color=c4b5fd&icon_color=3b82f6&border_color=1e293b&ring_color=818cf8&hide_border=false&count_private=true&rank_icon=github&custom_title=Aniket%20Das's%20GitHub%20Stats" width="49%" alt="GitHub Stats"/>
-<img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Aniket-Das-2006&layout=compact&bg_color=0d1117&title_color=818cf8&text_color=c4b5fd&border_color=1e293b&hide_border=false&langs_count=8" width="41%" alt="Top Languages"/>
+<img src="https://github-readme-stats-sigma-five.vercel.app/api?username=Aniket-Das-2006&show_icons=true&bg_color=0d1117&title_color=818cf8&text_color=c4b5fd&icon_color=3b82f6&border_color=1e293b&ring_color=818cf8&hide_border=false&count_private=true&rank_icon=github&custom_title=Aniket%20Das's%20GitHub%20Stats&cache_seconds=1800" width="49%" alt="GitHub Stats"/>
+<img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Aniket-Das-2006&layout=compact&bg_color=0d1117&title_color=818cf8&text_color=c4b5fd&border_color=1e293b&hide_border=false&langs_count=8&cache_seconds=1800" width="41%" alt="Top Languages"/>
 <br/><br/>
-<img src="https://streak-stats.demolab.com?user=Aniket-Das-2006&theme=transparent&border=1e293b&ring=818cf8&fire=3b82f6&currStreakLabel=c4b5fd&sideLabels=818cf8&currStreakNum=ffffff&sideNums=c4b5fd&dates=64748b&background=0d1117" width="60%" alt="GitHub Streak"/>
+<img src="https://streak-stats.demolab.com?user=Aniket-Das-2006&theme=transparent&border=1e293b&ring=818cf8&fire=3b82f6&currStreakLabel=c4b5fd&sideLabels=818cf8&currStreakNum=ffffff&sideNums=c4b5fd&dates=64748b&background=0d1117&cache_seconds=1800" width="60%" alt="GitHub Streak"/>
 <br/><br/>
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Aniket-Das-2006&bg_color=0d1117&color=818cf8&line=3b82f6&point=c4b5fd&area_color=818cf8&area=true&hide_border=false&custom_title=Contribution%20Graph&border_color=1e293b" width="95%" alt="Contribution Graph"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Aniket-Das-2006&bg_color=0d1117&color=818cf8&line=3b82f6&point=c4b5fd&area_color=818cf8&area=true&hide_border=false&custom_title=Contribution%20Graph&border_color=1e293b&cache_seconds=1800" width="95%" alt="Contribution Graph"/>
 </td>
 </tr>
 </table>
