@@ -63,9 +63,9 @@
 <td>Personal portfolio &amp; automated profile</td>
 </tr>
 <tr bgcolor="#0f172a">
-<td>&nbsp;</td>
-<td align="center">&nbsp;</td>
-<td>&nbsp;</td>
+<td><a href="https://github.com/Aniket-Das-2006/Policy-IQ" style="color: #818cf8; text-decoration: none; font-weight: bold;">Policy-IQ</a></td>
+<td align="center"><code style="color: #60a5fa; background: #1e293b; padding: 2px 6px; border-radius: 4px;">TypeScript</code></td>
+<td>Causal inference simulator &amp; public policy lab</td>
 </tr>
 <tr bgcolor="#07040d">
 <td>&nbsp;</td>
